@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>News Summarizer</h1>
+    </header>
+    <main>
+        <form action="{{ url_for('search') }}" method="POST">
+            <input type="text" name="query" placeholder="Enter your query">
+            <button type="submit">Search</button>
+        </form>
+
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+
+        {% if articles %}
+            <h2>Results for "{{ query }}"</h2>
+            <ul>
+                {% for article in articles %}
+                    <li>
+                        <a href="{{ article['link'] }}">{{ article['title'] }}</a>
+                        <p>{{ article['summary'] }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </main>
+</body>
+</html>
