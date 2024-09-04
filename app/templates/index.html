@@ -15,22 +15,6 @@
             <input type="text" name="query" placeholder="Enter your query">
             <button type="submit">Search</button>
         </form>
-
-        {% if error %}
-            <p>{{ error }}</p>
-        {% endif %}
-
-        {% if articles %}
-            <h2>Results for "{{ query }}"</h2>
-            <ul>
-                {% for article in articles %}
-                    <li>
-                        <a href="{{ article['link'] }}">{{ article['title'] }}</a>
-                        <p>{{ article['summary'] }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endif %}
     </main>
 </body>
 </html>
