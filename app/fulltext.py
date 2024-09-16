@@ -26,12 +26,12 @@ def fetch_article(url,query):
             os.makedirs(f'html_data/{query}')
         name_f = f"{random.randint(1000, 9999)}"
 
-        body = body.find_all('p')
-        body = model_responce(f"give me full html in json formet. <{body}>")
-        with open(f'html_data/{query}/{name_f}.json', 'w') as f:
-            f.write(body)
-        # with open(f'html_data/{query}/{name_f}.html', 'w', encoding='utf-8') as file:
-        #     file.write(body.prettify())
+        # body = body.find_all('p')
+        # body = model_responce(f"give me full html in json formet. <{body}>")
+        # with open(f'html_data/{query}/{name_f}.json', 'w') as f:
+        #     f.write(body)
+        with open(f'html_data/{query}/{name_f}.html', 'w', encoding='utf-8') as file:
+            file.write(body.prettify())
 
 
         
