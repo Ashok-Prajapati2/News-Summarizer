@@ -44,6 +44,7 @@ async def process_query(query):
             full_article = fetch_article(link,query)
             new_title = full_article['title']
             new_article = full_article['content']
+            summary = full_article['summary']
 
             result_rows.append({
                 'query': query,
@@ -52,6 +53,7 @@ async def process_query(query):
                 'new_title':new_title,
                 'link': link,
                 'snippet': snippet,
+                'summary':summary,
                 'full_article': full_article
             })
         return result_rows

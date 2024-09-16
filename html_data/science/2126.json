@@ -1,0 +1,229 @@
+Here is the full HTML in JSON format:
+
+```json
+{
+  "data": [
+    {
+      "html": {
+        "tag": "p",
+        "class": "updated-time",
+        "children": [
+          {"text": "Updated"},
+          {
+            "html": {
+              "tag": "span",
+              "children": [
+                {
+                  "text": " - September 12, 2024 04:58 pm IST "
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "Researchers at the Indian Institute of Science (IISc) have developed a brain-inspired analog computing platform capable of storing and processing data in an astonishing 16,500 conductance states within a molecular film. Published on September 11 in the journal Nature, this breakthrough represents a step forward over traditional digital computers in which data storage and processing are limited to just two states, the IISc said."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "In a press release, the institute said that such a platform could potentially bring complex AI tasks, like training Large Language Models (LLMs), to personal devices like laptops and smartphones, thus taking us closer to democratising the development of AI tools. These developments are currently restricted to resource-heavy data centres, due to a lack of energy-efficient hardware. With silicon electronics nearing saturation, designing brain-inspired accelerators that can work alongside silicon chips to deliver faster, more efficient AI is also becoming crucial."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": ""Neuromorphic computing has had its fair share of unsolved challenges for over a decade," explained Sreetosh Goswami, Assistant Professor at the Centre for Nano Science and Engineering (CeNSE), IISc, who led the research team. "With this discovery, we have almost nailed the perfect system  a rare feat," he said."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "According to IISc, the fundamental operation underlying most AI algorithms is quite basic  matrix multiplication, a concept taught in high school maths. But in digital computers, these calculations hog a lot of energy. The platform developed by the IISc team drastically cuts down both the time and energy involved, making these calculations a lot faster and easier."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "The molecular system at the heart of the platform was designed by Sreebrata Goswami, Visiting Professor at CeNSE. As molecules and ions wiggle and move within a material film, they create countless unique memory states, many of which have been inaccessible so far. Most digital devices are only able to access two states (high and low conductance), without being able to tap into the infinite number of intermediate states possible."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "By using precisely timed voltage pulses, the IISc team found a way to effectively trace a much larger number of molecular movements, and map each of these to a distinct electrical signal, forming an extensive "molecular diary" of different states. "This project brought together the precision of electrical engineering with the creativity of chemistry, letting us control molecular kinetics very precisely inside an electronic circuit powered by nanosecond voltage pulses," explained Goswami."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "\"Tapping into these tiny molecular changes allowed the team to create a highly precise and efficient neuromorphic accelerator, which can store and process data within the same location, similar to the human brain. Such accelerators can be seamlessly integrated with silicon circuits to boost their performance and energy efficiency,\" the IISc said."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "IISc researchers said the key challenge that the team faced was characterising the various conductance states, which proved impossible using existing equipment. The team designed a custom circuit board that could measure voltages as tiny as a millionth of a volt, to pinpoint these individual states with unprecedented accuracy."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "It also turned this scientific discovery into a technological feat. The team was able to recreate NASA's iconic "Pillars of Creation" image from the James Webb Space Telescope data  originally created by a supercomputer  using just a tabletop computer. They were also able to do this at a fraction of the time and energy that traditional computers would need."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "Using their AI accelerator, the team recreated NASA's iconic "Pillars of Creation" image from the James Webb Space Telescope data on a tabletop computer  achieving this in a fraction of the time and energy required by traditional systems, it said."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "The team includes several students and research fellows at IISc. They also collaborated with Stanley Williams, Professor at Texas A&amp;M University and Damien Thompson, Professor at the University of Limerick, it added."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "The researchers believe that this breakthrough could be one of India's biggest leaps in AI hardware, putting the country on the map of global technology innovation. Navakanta Bhat, Professor at CeNSE and an expert in silicon electronics led the circuit and system design in this project. "What stands out is how we have transformed complex physics and chemistry understanding into groundbreaking technology for AI hardware," Goswami explained."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": ""In the context of the India Semiconductor Mission, this development could be a game-changer, revolutionising industrial, consumer and strategic applications. The national importance of such research cannot be overstated," he said."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "With support from the Ministry of Electronics and Information Technology, the IISc team is now focused on developing a fully indigenous integrated neuromorphic chip. "This is a completely home-grown effort, from materials to circuits and systems," he emphasised."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": ""We are well on our way to translating this technology into a system-on-a-chip," he added."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "class": "publish-time-new",
+        "children": [
+          {
+            "text": "Published"
+          },
+          {
+            "html": {
+              "tag": "span",
+              "children": [
+                {
+                  "text": " - September 12, 2024 03:57 pm IST"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "class": "link",
+        "children": [
+          {
+            "text": " "
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "Comments have to be in English, and in full sentences. They cannot be abusive or personal. Please abide by our  for posting your comments."
+          }
+        ]
+      }
+    },
+    {
+      "html": {
+        "tag": "p",
+        "children": [
+          {
+            "text": "We have migrated to a new commenting platform. If you are already a registered user of The Hindu and logged in, you may continue to engage with our articles. If you do not have an account please register and login to post comments. Users can access their older comments by logging into their accounts on Vuukle."
+          }
+        ]
+      }
+    }
+  ]
+}
+```

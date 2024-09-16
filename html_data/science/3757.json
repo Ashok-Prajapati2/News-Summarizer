@@ -1,0 +1,60 @@
+Here's the HTML code in JSON format using JavaScript objects to represent the HTML elements:
+
+```json
+{
+  "element": "div",
+  "children": [
+    {
+      "element": "p",
+      "attributes": {
+        "class": "link"
+      },
+      "children": [
+        {
+          "element": "span",
+          "children": [
+            {
+              "type": "text",
+              "content": "  |  "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Alternatively, if you want to represent the HTML code in a more simplified JSON format, you could use a string-based representation:
+
+```json
+{
+  "html": "<p class=\"link\"><span>  |  </span></p>"
+}
+```
+
+Or if you prefer an array-based format using a more normalized structure:
+
+```json
+{
+  "tag": "div",
+  "class": null,
+  "children": [
+    {
+      "tag": "p",
+      "class": "link",
+      "children": [
+        {
+          "tag": "span",
+          "class": null,
+          "children": [
+            {
+              "text": "  |  "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```

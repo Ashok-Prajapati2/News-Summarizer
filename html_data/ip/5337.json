@@ -1,0 +1,122 @@
+```json
+{
+  "html": [
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "In high-profile WhatsApp impersonation cases over the last three years targeting former Vice President M Venkaiah Naidu, Union Ministers Nirmala Sitharaman and Kiren Rijiju, and CJI D Y Chandrachud, among others, probe revealed IP addresses of Pakistan, Hong Kong and Nigeria after analysing the WhatsApp accounts involved in these offences."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Earlier this week, the cyber-police station of New Delhi district police lodged an  under BNS Section 204 (whoever pretends to hold any particular office as a public servant) and 66 (C) of the IT Act based on a complaint from an inspector of the security wing of Supreme Court Pawan Kumar, who alleged that someone was ",
+          "tag": "strong",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Last year too, a similar FIR was lodged with the Intelligence Fusion and Strategic Operations unit of the Special Cell, an officer said."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "An officer said investigation revealed that the SIM cards used were obtained from  ,  , Punjab, Haryana, Delhi, Gujarat and  . “Details of WhatsApp accounts involved in offences were obtained, which revealed IP addresses of Nigeria, Hong Kong and Pakistan. IP addresses were analysed on an open source tool and it was found no VPN or proxy was used,” the officer said."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Since 2022, Delhi Police has registered cases after suspects pretended to be Union Petroleum and Natural Gas Minister Hardeep Singh Puri, former Agriculture Minister Narendra Singh Tomar, Union Labour Minister Mansukh Mandaviya, Delhi L-G VK Saxena, Lok Sabha Speaker  , former CJI N V Ramana, former Attorney General of India KK Venugopal, Delhi HC Judge Justice Chandra Dhari Singh, Defence Secretary Giridhar Aramane, former Union Home Secretary Rajiv Mehrishi and Delhi Police Commissioner Sanjay Arora."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "An officer said the suspect creates a WhatsApp account with a picture of the target from social media or the Internet."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "“Prior to that, the accused sniffs OTPs of Indian phone numbers either using SMS forwarding apps or purchases them from Telegram groups. During analysis of phone numbers of some suspects, whose phone numbers were used in this offence, an SMS forwarding app, ‘Thermal Camera app’, was found installed,” the officer said. According to the police, Thermal Camera app is a malicious app that performs SMS bombing — an user’s number is flooded with messages or even OTP calls in a short span to harass an user and disrupt device’s normal functioning — on registered number on the app to send OTP of Gmail, WhatsApp and Facebook."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "“After opening a fake account (using target’s details), suspect sends messages to those who know the target, asking them to purchase e-gift cards from e-commerce sites on pretext of emergency and ask them to share it. Some of them buy and send them to the suspect, who sells them on Paxful or Telegram,” an officer said."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": ""
+        },
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "em",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "class": "author-bio",
+      "children": [
+        {
+          "text": " Mahender Singh Manral is an Assistant Editor with the national bureau of The Indian Express. He is known for his impactful and breaking stories. He covers the Ministry of Home Affairs, Investigative Agencies, National Investigative Agency, Central Bureau of Investigation, Law Enforcement Agencies, Paramilitary Forces, and internal security."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Prior to this, Manral had extensively reported on city-based crime stories along with that he also covered the anti-corruption branch of the Delhi government for a decade. He is known for his knack for News and a detailed understanding of stories. He also worked with Mail Today as a senior correspondent for eleven months. He has also worked with The Pioneer for two years where he was exclusively covering crime beat."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "During his initial days of the career he also worked with The Statesman newspaper in the national capital, where he was entrusted with beats like crime, education, and the Delhi Jal Board. A graduate in Mass Communication, Manral is always in search of stories that impact lives."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": []
+    },
+    {
+      "tag": "p",
+      "children": []
+    }
+  ]
+}
+```

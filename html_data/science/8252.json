@@ -1,0 +1,58 @@
+Here is the HTML content in JSON format:
+
+```json
+[
+  {
+    "type": "p",
+    "class": "font-size-08-06",
+    "id": "todaysdate",
+    "style": "margin-bottom:0px; margin-top:0px; font-family: Montserrat; color:#828282;",
+    "text": "Sunday | 15 September, 2024"
+  },
+  {
+    "type": "p",
+    "text": "The Coast Guard's 295' three-masted barque moves toward the startling line on June 1980 afternoon in Boston with the Gorch Fock II, the Eagles sister ship, from Kiel, Germany as the trans-Atlantic race from Boston to Kristiansand, Norway got underway. The race was the last event of the tall ships participation in Boston's Jubilee 350. PHOTO: THE HINDU ARCHIVES  | Photo Credit: AP/The Hindu Archives"
+  },
+  {
+    "type": "p",
+    "text": "Unseen to the human eye, large streams of air flow throughout the earth’s lower atmosphere. The product of the uneven heating of the earth’s surface, they regulate heat, moisture, and the concentration of pollutants.  As they rise and sink over distinct latitudes, they give rise to the trade winds, the westerlies, and the polar easterlies. They also create calm, low-pressure zones where air masses rise and sink as they heat up and cool down."
+  },
+  {
+    "type": "p",
+    "text": "One such zone is the Intertropical Convergence Zone (ITCZ). The sailors of yore called its place the doldrums. The ITCZ extends north and south of the equator, where the northeast and the southeast trade winds would converge. This air movement, driven by equatorial heat, creates a cycle where air rises at the equator, forms clouds and storms, and sinks down around 30 degrees latitude N or S. The cycle is called the  Hadley cell circulation, and has long been blamed for creating windless areas (under the rising air masses) near the equator."
+  },
+  {
+    "type": "p",
+    "text": "A  published in the <i>Journal of Geophysical Research Letters</i> could turn this understanding around. In the study, researchers have said air masses could be descending instead of rising in the windless areas."
+  },
+  {
+    "type": "p",
+    "text": "Julia Windmiller, the lead author of the paper and an atmospheric scientist at the Max Planck Institute for Meteorology,  in a press release that experts tried to explain the cause of the doldrums  about a century ago — a time when they didn’t know much about how air moved."
+  },
+  {
+    "type": "p",
+    "text": "Though the explanation accounted for the broad patches of calmer winds near the equator, its predictions matched reality only over several days or weeks. On a shorter timescale, the explanation  imploded."
+  },
+  {
+    "type": "p",
+    "text": "Converging air masses don’t always create sufficiently large zones of calm to match the extended periods of low winds recorded in the doldrums. The convergence of trade winds and their subsequent upward movement can indeed create pockets of slow wind, but these areas are typically smaller than what mariners have reported"
+  },
+  {
+    "type": "p",
+    "text": "The researchers analysed meteorological data from the ITCZ in the Atlantic Ocean from 2001 to 2021 and buoy data between 1998 and 2018. They tried to pinpoint the edges of the ITCZ and explore low wind speed events, defined as winds slower than 3 m/s for at least six hours."
+  },
+  {
+    "type": "p",
+    "text": "The team found  that low wind-speed events, traditionally thought to be caused by rising air masses, are more closely associated with sinking air masses instead. The sinking air creates clearer weather, lower temperatures, and a lack of rain — all conditions associated with  diverging air masses at the surface, not converging ones."
+  },
+  {
+    "type": "p",
+    "text": "The finding has significant implications for understanding the geographic dynamics of wind patterns near the equator. The sinking air masses identified by the study also provide a new lens through which to study the doldrums, their impact on rain and wind patterns, and their impact in turn on climate models."
+  },
+  {
+    "type": "p",
+    "class": "link",
+    "text": "  |  "
+  }
+]
+```

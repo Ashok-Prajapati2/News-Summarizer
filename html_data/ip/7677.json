@@ -1,0 +1,158 @@
+```json
+{
+  "html": [
+    {
+      "tag": "p",
+      "attributes": {
+        "class": "publish-time-new"
+      },
+      "children": [
+        {
+          "text": "Published "
+        },
+        {
+          "tag": "span",
+          "children": [
+            {
+              "text": "- September 16, 2024 07:13 am IST - New Delhi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "A 25-year-old student on Sunday (September 16, 2024) died after he allegedly committed suicide by jumping from the seventh floor of his hostel in the IP University in southwest Delhi, officials said."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "The Delhi Police in a statement said that a call was received at 6.20 p.m. at the Dwarka North Police Station regarding a student had committed suicide."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "The police reached the spot and the student was identified as Gautam Kumar, a resident of Bihar's Vaishali."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": ""He was a student of MBA 1st year at the IP University main campus located in Sector-16. He committed suicide by jumping from the 7th floor of the hostel building. The body of the deceased was transferred at the DDU Hospital for the postmortem. Inquiry and investigative proceedings from the police side in the matter are on," read the police statement."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "There was no immediate response from the university administration."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Sources said that the student was upset after he was expelled from the hostel for celebrating a birthday party."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Some of his classmates reportedly raised slogans against the varsity administration."
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "attributes": {
+        "class": "publish-time-new"
+      },
+      "children": [
+        {
+          "text": "Published "
+        },
+        {
+          "tag": "span",
+          "children": [
+            {
+              "text": "- September 16, 2024 07:13 am IST"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "attributes": {
+        "class": "related-topics-list"
+      },
+      "children": [
+        {
+          "tag": "span",
+          "children": [
+            {
+              "text": "/"
+            }
+          ]
+        },
+        {
+          "tag": "span",
+          "children": [
+            {
+              "text": "/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "attributes": {
+        "class": "link"
+      },
+      "children": [
+        {
+          "tag": "span",
+          "children": [
+            {
+              "text": "  | "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "Comments have to be in English, and in full sentences. They cannot be abusive or personal. Please abide by our "
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "children": [
+        {
+          "text": "We have migrated to a new commenting platform. If you are already a registered user of The Hindu and logged in, you may continue to engage with our articles. If you do not have an account please register and login to post comments. Users can access their older comments by logging into their accounts on Vuukle."
+        }
+      ]
+    }
+  ]
+}
+```
+
+Please note that the given JSON structure is not a standard HTML to JSON conversion format. However, I have used a custom format to represent the given HTML structure in JSON format. If you are looking for a standard conversion, you might want to consider using a library or tool that provides this functionality, such as jSoup or Cheerio.js for JavaScript or BeautifulSoup for Python.

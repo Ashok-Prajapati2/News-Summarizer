@@ -1,0 +1,13 @@
+```json
+{
+  "tag": "p",
+  "class": "link",
+  "children": [
+    {
+      "tag": "span",
+      "text": "  |  "
+    }
+  ]
+}
+```
+Note: This JSON format doesn't follow a standard HTML parsing specification, but it represents the structure of the provided HTML in a JSON format.

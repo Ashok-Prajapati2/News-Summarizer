@@ -1,0 +1,16 @@
+Here's the full HTML in JSON format:
+
+```json
+{
+  "element": "p",
+  "attributes": {
+    "class": "link"
+  },
+  "children": [
+    {
+      "element": "span",
+      "children": ["  |  "]
+    }
+  ]
+}
+```

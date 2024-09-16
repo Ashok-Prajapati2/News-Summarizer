@@ -13,3 +13,4 @@ venv/
 *.sqlite3
 *.db
 
+delete_user.py

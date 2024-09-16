@@ -1,0 +1,268 @@
+Below is the provided HTML in JSON format.
+
+```json
+{
+  "paragraphs": [
+    {
+      "html": "<p></p>",
+      "text": ""
+    },
+    {
+      "html": "<p></p>",
+      "text": ""
+    },
+    {
+      "html": "<p class=\"\">",
+      "text": "I P Rings Ltd., operating in the Auto Ancl - Engine Parts sector and classified as a Smallcap on the bse, currently has its share price at ₹231.45 The stock has experienced fluctuations today, with a low of ₹220 and a high of ₹232.95.  Over the past 52 weeks, the shares have seen a low of ₹126 and a high of ₹262.4.</p>",
+      "tags": {
+        "b": [
+          {
+            "text": "I P Rings Ltd."
+          },
+          {
+            "text": "Auto Ancl - Engine Parts"
+          },
+          {
+            "text": "Smallcap"
+          },
+          {
+            "text": "bse"
+          }
+        ],
+        "span": [
+          {
+            "class": "currentPrice",
+            "text": "381.20"
+          },
+          {
+            "class": "listingTypeTxt",
+            "text": "bse"
+          },
+          {
+            "class": "todaysLow",
+            "text": "380.40"
+          },
+          {
+            "class": "todaysHigh",
+            "text": "383.80"
+          },
+          {
+            "class": "fiftyTwoWeekLow",
+            "text": "230.50"
+          },
+          {
+            "class": "fiftyTwoWeekHigh",
+            "text": "382.80"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"disp_0\">In terms of performance, <b>I P Rings Ltd.</b> has shown a return of <span class=\"trend1D\"><b class=\"up\">2.82%</b></span> in one day, <span class=\"trend1M\"><b class=\"up\">33.59%</b></span> over the past month, and <span class=\"trend3M\"><b class=\"up\">17.52%</b></span> in the last three months.</p>",
+      "text": "In terms of performance, I P Rings Ltd. has shown a return of 8.73% in one day, 8.35% over the past month, and 51.63% in the last three months.",
+      "tags": {
+        "b": [
+          {
+            "text": "I P Rings Ltd."
+          }
+        ],
+        "span": [
+          {
+            "class": "trend1D",
+            "text": "8.73%"
+          },
+          {
+            "class": "trend1M",
+            "text": "8.35%"
+          },
+          {
+            "class": "trend3M",
+            "text": "51.63%"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"disp_0\">Analyzing the technicals, the daily pivot level for the stock is set at <span class=\"pivotChTxt\"><b>228.13</b></span>. The resistance levels are identified as R1 at <span class=\"pivotR1ChTxt\"><b>236.27</b></span>, R2 at <span class=\"pivotR2ChTxt\"><b>241.08</b></span>, and R3 at <span class=\"pivotR3ChTxt\"><b>249.22</b></span>. On the support side, the levels are marked as S1 at <span class=\"pivotS1ChTxt\"><b>223.32</b></span>, S2 at <span class=\"pivotS2ChTxt\"><b>215.18</b></span>, and S3 at <span class=\"pivotS3ChTxt\"><b>210.37</b></span>.</p>",
+      "text": "Analyzing the technicals, the daily pivot level for the stock is set at 220.96. The resistance levels are identified as R1 at 228.64, R2 at 238.38, and R3 at 256.74. On the support side, the levels are marked as S1 at 208.03, S2 at 203.93, and S3 at 198.73.",
+      "tags": {
+        "span": [
+          {
+            "class": "pivotChTxt",
+            "text": "220.96"
+          },
+          {
+            "class": "pivotR1ChTxt",
+            "text": "228.64"
+          },
+          {
+            "class": "pivotR2ChTxt",
+            "text": "238.38"
+          },
+          {
+            "class": "pivotR3ChTxt",
+            "text": "256.74"
+          },
+          {
+            "class": "pivotS1ChTxt",
+            "text": "208.03"
+          },
+          {
+            "class": "pivotS2ChTxt",
+            "text": "203.93"
+          },
+          {
+            "class": "pivotS3ChTxt",
+            "text": "198.73"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"disp_0\">In the realm of technical analysis for our subject stock, the moving averages present a detailed picture. Over a short span of 5 days, the Simple Moving Average (SMA) stands at <span class=\"d5SMATxt\"><b>229.17</b></span>, while the Exponential Moving Average (EMA) is noted at <span class=\"d5EMA\"><b>228.95</b></span>. Extending the view to a 10-day period, the SMA adjusts to <span class=\"d10SMA\"><b>234.13</b></span> with the EMA slightly differing at <span class=\"d10EMA\"><b>229.3</b></span>.</p>",
+      "text": "In the realm of technical analysis for our subject stock, the moving averages present a detailed picture. Over a short span of 5 days, the Simple Moving Average (SMA) stands at 230.39, while the Exponential Moving Average (EMA) is noted at 230.25. Extending the view to a 10-day period, the SMA adjusts to 240 and the EMA slightly differing at 231.",
+      "tags": {
+        "span": [
+          {
+            "class": "d5SMATxt",
+            "text": "230.39"
+          },
+          {
+            "class": "d5EMA",
+            "text": "230.25"
+          },
+          {
+            "class": "d10SMA",
+            "text": "240"
+          },
+          {
+            "class": "d10EMA",
+            "text": "231"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"disp_0\">In a comparative analysis of stock performance within its sector, <b>I P Rings Ltd.</b> stands alongside several key competitors, each showcasing varied performance metrics over different time periods. <b>I P Rings Ltd.</b> itself has recorded performance figures of 1W % is <span class=\"peer1WeekTxt\"><b class=\"down\">-1.03</b></span> over the past week, <span class=\"peer1MonthTxt\"><b class=\"up\">32.64%</b></span> in the last month, and <span class=\"peer3MonthTxt\"><b class=\"up\">15.78%</b></span> over the past three months. Its six-month, one-year, three-year, and five-year performances are 6 month % is <span class=\"peer6MonthTxt\"><b class=\"up\">50.05</b></span>, 1yr % is <span class=\"peer1YearTxt\"><b class=\"up\">64.15</b></span>, 3Y % is <span class=\"peer3YearTxt\"><b class=\"up\">57.45</b></span>, and 5Y % is <span class=\"peer5YearTxt\"><b class=\"up\">274.82</b></span> respectively.</p>",
+      "text": "In a comparative analysis of stock performance within its sector, I P Rings Ltd. stands alongside several key competitors, each showcasing varied performance metrics over different time periods. I P Rings Ltd. itself has recorded performance figures of 1W % is -0.29% over the past week, 25.83% in the last month, and 16.08% over the past three months. Its six-month, one-year, three-year, and five-year performances are 6 month % is 45.84%, 1yr % is 59.14%, 3Y % is 54.17%, and 5Y % is 261.92% respectively.",
+      "tags": {
+        "b": [
+          {
+            "text": "I P Rings Ltd."
+          }
+        ],
+        "span": [
+          {
+            "class": "peer1WeekTxt",
+            "text": "-0.29%"
+          },
+          {
+            "class": "peer1MonthTxt",
+            "text": "25.83%"
+          },
+          {
+            "class": "peer3MonthTxt",
+            "text": "16.08%"
+          },
+          {
+            "class": "peer6MonthTxt",
+            "text": "45.84%"
+          },
+          {
+            "class": "peer1YearTxt",
+            "text": "59.14%"
+          },
+          {
+            "class": "peer3YearTxt",
+            "text": "54.17%"
+          },
+          {
+            "class": "peer5YearTxt",
+            "text": "261.92%"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"viewMoreLess flR\"><span class=\"more\" toview=\"1\">Read More",
+      "text": "Read More"
+    },
+    {
+      "html": "<p class=\"\">I P Rings Ltd. is a Public Limited Listed company incorporated on 30/01/1991 and has its registered office in the State of Tamil Nadu, India. Company’s Corporate Identification Number(CIN) is L28920TN1991PLC020232 and registration number is 020232. Currently company belongs to the Industry of Auto Ancl - Engine Parts. Company’s Total Operating Revenue is Rs. 272.71 Cr. and Equity Capital is Rs. 12.68 Cr. for the Year ended 31/03/2022.</p>",
+      "text": "I P Rings Ltd. is a Public Limited Listed company incorporated on 30/01/1991 and has its registered office in the State of Tamil Nadu, India. Company’s Corporate Identification Number(CIN) is L28920TN1991PLC020232 and registration number is 020232. Currently company belongs to the Industry of Auto Ancl - Engine Parts. Company’s Total Operating Revenue is Rs. 272.71 Cr. and Equity Capital is Rs. 12.68 Cr. for the Year ended 31/03/2022."
+    },
+    {
+      "html": "<p class=\"detail\">The market cap of I P Rings Ltd. is <span class=\"mcap\"><b>₹293.38</b></span> Cr as on <span class=\"datetime\"><b>Sep 13, 2024</b></span>.</p>",
+      "text": "The market cap of I P Rings Ltd. is ₹ 261.87 Cr as on Sep 13, 2024.",
+      "tags": {
+        "span": [
+          {
+            "class": "mcap",
+            "text": "293.38"
+          },
+          {
+            "class": "datetime",
+            "text": "Sep 13, 2024"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"detail\">P/E ratio of I P Rings Ltd. is <span class=\"pe-ratio\"><b>-90.85</b></span> and PB ratio of I P Rings Ltd. is <span class=\"pb-ratio\"><b>2.77</b></span> as on <span class=\"datetime\"><b>Sep 13, 2024</b></span>.</p>",
+      "text": "P/E ratio of I P Rings Ltd. is -81.21 and PB ratio of I P Rings Ltd. is 2.52 as on Sep 13, 2024.",
+      "tags": {
+        "span": [
+          {
+            "class": "pe-ratio",
+            "text": "-81.21"
+          },
+          {
+            "class": "pb-ratio",
+            "text": "2.52"
+          },
+          {
+            "class": "datetime",
+            "text": "Sep 13, 2024"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"detail\">The share price of any company is dynamic and keeps changing depending on the trade initiated. The shares have a fixed opening rate and closing rate. The share price for I P Rings Ltd. is <span class=\"current\"><b>₹231.45</b></span> as on <span class=\"datetime\"><b>Sep 13, 2024</b></span>.</p>",
+      "text": "The share price for I P Rings Ltd. is ₹231.45 as on Sep 13, 2024.",
+      "tags": {
+        "span": [
+          {
+            "class": "current",
+            "text": "231.45"
+          },
+          {
+            "class": "datetime",
+            "text": "Sep 13, 2024"
+          }
+        ]
+      }
+    },
+    {
+      "html": "<p class=\"detail\">The 52-week high/low is the highest and lowest price at which I P Rings Ltd. stock has traded in the past 52-week or nearly a year. The 52-week high of I P Rings Ltd. is <span class=\"fiftytwoweekhigh\"><b>₹262.40</b></span> and 52-week low of I P Rings Ltd. is <span class=\"fiftytwoweeklow\"><b>₹126.00</b></span> as on <span class=\"datetime\"><b>Sep 13, 2024</b></span>.</p>",
+      "text": "The 52-week high/low is the highest and lowest price at which I P Rings Ltd. stock has traded in the past 52-week or nearly a year. The 52-week high of I P Rings Ltd. is ₹262.40 and 52-week low of I P Rings Ltd. is ₹126.00 as on Sep 13, 2024.",
+      "tags": {
+        "span": [
+          {
+            "class": "fiftytwoweekhigh",
+            "text": "262.40"
+          },
+          {
+            "class": "fiftytwoweeklow",
+            "text": "126.00"
+          },
+          {
+            "class": "datetime",
+            "text": "Sep 13, 2024"
+          }
+        ]
+      }
+    }
+  ]
+}
+```

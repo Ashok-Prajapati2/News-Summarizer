@@ -11,6 +11,13 @@
         <h1>News Summarizer</h1>
     </header>
     <main>
+   {% if not user.is_authenticated %}
+    <a href="{{ url_for('login') }}">Login</a>
+    {% else %}
+    <h1>Welcome, {{ username }}!</h1>
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
+{% endif %}
+
         <form action="{{ url_for('search') }}" method="POST">
             <input type="text" name="query" placeholder="Enter your query">
             <button type="submit">Search</button>
@@ -18,3 +25,8 @@
     </main>
 </body>
 </html>
+
+
+
+   
+

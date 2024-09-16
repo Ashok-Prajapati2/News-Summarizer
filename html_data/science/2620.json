@@ -1,0 +1,100 @@
+Here's the full HTML in JSON format:
+
+```json
+{
+  "html": [
+    {
+      "tag": "p",
+      "class": "updated-time",
+      "text": "Updated",
+      "children": [
+        {
+          "tag": "span",
+          "text": " - September 16, 2024 07:51 am IST"
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "text": "Open science includes a set of principles and practices, such as free access to publications, free availability of data sets, use of open-source software, and involvement of society in research through citizen science. The main idea is to make scientific research and findings from all fields available to everyone without any restrictions. Open science encourages transparency and collaboration in research through sharing of information and making it accessible to everyone and strives to solve the limitations of traditional methods of research outreach, including restricted access to publications, research data and tools.",
+      "children": [
+        {
+          "tag": "span",
+          "class": "drop-caps",
+          "text": "O"
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "text": "When it comes to open-access publishing, every party — including author, publishers, editor and reviewer — plays a crucial role in maintaining transparency and integrity. The author is mainly responsible for providing real data without fabrication, avoiding plagiarism, and giving due acknowledgement to the work of others. He/she should always give due credit to all contributors but avoid ghost-authoring. Declaration of conflict of interest — whether financial, professional or personal — is essential to prevent interference with the research outputs."
+    },
+    {
+      "tag": "p",
+      "text": "On the other hand, the publisher should adhere to a strict peer review processes to ascertain the reliability and reproducibility of the research work. Unfortunately, there are a few open-access publishers that do not offer rigorous and unbiased peer reviews, thus lowering the quality of publications. As more journals adopt open-access publications, all parties should adhere to ethical publication principles to maintain the standards."
+    },
+    {
+      "tag": "p",
+      "text": "Artificial intelligence (AI) is influencing different technical and non-technical fields with advances in automation. It will have an impact on open science by aiding in rapid data mining and data analysis. As most of the current AI tools depend on the vast databases created from the data pooled from different sources, it can further encourage data sharing through collaborations. By doing this, open science benefits AI by providing much-needed data through participative research and inclusive practices. On the other hand, AI poses challenges for open science due to its closed nature, which can affect reliability, reproducibility, and bias. Open science principles, especially transparency in data, need to be applied to AI to address these issues."
+    },
+    {
+      "tag": "p",
+      "text": "The most important aspect of open science is unrestricted access to the knowledge created, including research articles, data sets, educational resources, and so on. It enables students and researchers to enhance their knowledge and research capacity. Further, for researchers, visibility of their work is important and is provided through publishing in open-access journals. Students and researchers get the opportunity to work on collaborative research projects involving researchers from different institutes and countries."
+    },
+    {
+      "tag": "p",
+      "text": "The future of open science is exciting, and set to play a crucial role in shaping research and education in the future. It enables better research outputs, transparency in research, inclusivity and better utilisation of research funds."
+    },
+    {
+      "tag": "p",
+      "text": "Open science makes research outputs easily findable, accessible, interoperable and reusable (FAIR principle). Implementing open science poses a few technological, political, organisational, economic, and legal challenges. The research community can solve these issues by having will, collaborating, and finding funding opportunities."
+    },
+    {
+      "tag": "p",
+      "text": "The writer is Assistant Professor, School of Pharmacy and Technology Management, NMIMS, Mumbai."
+    },
+    {
+      "tag": "p",
+      "class": "publish-time-new",
+      "text": "Published",
+      "children": [
+        {
+          "tag": "span",
+          "text": " - September 14, 2024 02:00 pm IST"
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "class": "related-topics-list",
+      "children": [
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" },
+        { "tag": "span", "text": "/" }
+      ]
+    },
+    {
+      "tag": "p",
+      "class": "link",
+      "children": [
+        { "tag": "span", "text": "  |  " }
+      ]
+    },
+    {
+      "tag": "p",
+      "text": "Comments have to be in English, and in full sentences. They cannot be abusive or personal. Please abide by our  for posting your comments."
+    },
+    {
+      "tag": "p",
+      "text": "We have migrated to a new commenting platform. If you are already a registered user of The Hindu and logged in, you may continue to engage with our articles. If you do not have an account please register and login to post comments. Users can access their older comments by logging into their accounts on Vuukle."
+    }
+  ]
+}
+```
+
+This JSON object represents the given HTML structure in a tree-like format. Each node in the tree is an HTML element with its corresponding tag, class, and text properties. The `children` property is an array of child elements.

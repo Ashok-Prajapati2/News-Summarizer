@@ -1,0 +1,298 @@
+
+{
+  "_html": [
+    {
+      "tag": "p",
+      "content": "\u20b9<!-- -->230.85",
+      "children": [
+        {
+          "tag": "span",
+          "class": "companytop_cmpnyprcUp__Vmhy8",
+          "children": [
+            {
+              "tag": "i",
+              "children": [
+                {
+                  "tag": "svg",
+                  "class": "companytop_cmpnyprcUpicn__h0T0M",
+                  "fill": "none",
+                  "height": "22",
+                  "viewbox": "0 0 14 14",
+                  "width": "22",
+                  "xmlns": "http://www.w3.org/2000/svg",
+                  "children": [
+                    {
+                      "tag": "path",
+                      "d": "M6.12616 9.35375L4.32016 7.54833C4.15609 7.38419 3.93354 7.29194 3.70145 7.29188C3.46937 7.29183 3.24677 7.38397 3.08262 7.54804C2.91847 7.71211 2.82623 7.93467 2.82617 8.16675C2.82612 8.39884 2.91826 8.62144 3.08233 8.78558L6.38225 12.0855C6.4635 12.1668 6.55999 12.2313 6.66618 12.2753C6.77238 12.3193 6.88621 12.342 7.00116 12.342C7.11612 12.342 7.22994 12.3193 7.33614 12.2753C7.44234 12.2313 7.53882 12.1668 7.62008 12.0855L10.92 8.78617C11.0013 8.70489 11.0657 8.6084 11.1097 8.5022C11.1537 8.39601 11.1764 8.28219 11.1764 8.16725C11.1764 8.05231 11.1537 7.93849 11.1097 7.83229C11.0657 7.7261 11.0013 7.62961 10.92 7.54833C10.8387 7.46706 10.7422 7.40258 10.636 7.3586C10.5298 7.31461 10.416 7.29197 10.3011 7.29197C10.1861 7.29197 10.0723 7.31461 9.96612 7.3586C9.85993 7.40258 9.76344 7.46706 9.68216 7.54833L7.87616 9.35375V2.625C7.87616 2.39294 7.78398 2.17038 7.61988 2.00628C7.45579 1.84219 7.23323 1.75 7.00116 1.75C6.7691 1.75 6.54654 1.84219 6.38244 2.00628C6.21835 2.17038 6.12616 2.39294 6.12616 2.625V9.35375Z",
+                      "fill": "#3a9801"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "text",
+              "content": "0.00<!-- --> (<!-- -->0.00<!-- -->%)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "content": "<b>BSE</b> <small> : <!-- -->523638<!-- --> </small>"
+    },
+    {
+      "tag": "p",
+      "content": "<b>NSE</b> : <small> <!-- -->IPRINGLTD<!-- --> </small>"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Sector</b> :<!-- --> <small> <!-- -->Auto <!-- --> </small>"
+    },
+    {
+      "tag": "p",
+      "content": "<b>ISIN Code</b> :<!-- --> <small> <!-- -->INE558A01019<!-- --> </small>"
+    },
+    {
+      "tag": "p",
+      "class": "companytop_lstuptd__H6OqH",
+      "content": "Last Updated:<!-- --> <span>13-Sep-2024</span>"
+    },
+    {
+      "tag": "p",
+      "content": "Market Cap (\u20b9 Cr)"
+    },
+    {
+      "tag": "p",
+      "content": "293"
+    },
+    {
+      "tag": "p",
+      "content": "Traded Value (\u20b9 Cr)"
+    },
+    {
+      "tag": "p",
+      "content": "0.09"
+    },
+    {
+      "tag": "p",
+      "content": "Volume (Shares)"
+    },
+    {
+      "tag": "p",
+      "content": "4,025"
+    },
+    {
+      "tag": "p",
+      "content": "Face Value (\u20b9)"
+    },
+    {
+      "tag": "p",
+      "content": "10"
+    },
+    {
+      "tag": "p",
+      "content": "52-Week High (\u20b9)"
+    },
+    {
+      "tag": "p",
+      "content": "262.40"
+    },
+    {
+      "tag": "p",
+      "content": "52-Week High Date"
+    },
+    {
+      "tag": "p",
+      "content": "27-Aug-2024"
+    },
+    {
+      "tag": "p",
+      "content": "52-Week Low (\u20b9)"
+    },
+    {
+      "tag": "p",
+      "content": "126.00"
+    },
+    {
+      "tag": "p",
+      "content": "52-Week Low Date"
+    },
+    {
+      "tag": "p",
+      "content": "16-Nov-2023"
+    },
+    {
+      "tag": "p",
+      "content": "All Time High (\u20b9)"
+    },
+    {
+      "tag": "p",
+      "content": "278.80"
+    },
+    {
+      "tag": "p",
+      "content": "All Time High Date"
+    },
+    {
+      "tag": "p",
+      "content": "28-Dec-2017"
+    },
+    {
+      "tag": "p",
+      "content": "All Time Low (\u20b9)"
+    },
+    {
+      "tag": "p",
+      "content": "15.19"
+    },
+    {
+      "tag": "p",
+      "content": "All Time Low Date"
+    },
+    {
+      "tag": "p",
+      "content": "30-Aug-2001"
+    },
+    {
+      "tag": "p",
+      "content": "293"
+    },
+    {
+      "tag": "p",
+      "content": "0.00"
+    },
+    {
+      "tag": "p",
+      "content": "-"
+    },
+    {
+      "tag": "p",
+      "style": "margin:20px 0px 0px;font-size:12px",
+      "content": "[*C] Consolidated [*S] Standalone"
+    },
+    {
+      "tag": "p",
+      "title": "13 Sep 2024",
+      "content": "220.00"
+    },
+    {
+      "tag": "p",
+      "title": "13 Sep 2024",
+      "content": "232.95"
+    },
+    {
+      "tag": "p",
+      "title": "13 Sep 2024",
+      "content": "220.00"
+    },
+    {
+      "tag": "p",
+      "title": "06 Sep 2024",
+      "content": "240.00"
+    },
+    {
+      "tag": "p",
+      "title": "21 Aug 2024",
+      "content": "165.00"
+    },
+    {
+      "tag": "p",
+      "title": "27 Aug 2024",
+      "content": "262.00"
+    },
+    {
+      "tag": "p",
+      "title": "16 Nov 2023",
+      "content": "126.00"
+    },
+    {
+      "tag": "p",
+      "title": "27 Aug 2024",
+      "content": "262.00"
+    },
+    {
+      "tag": "p",
+      "title": "30 Aug 2001",
+      "content": "15.19"
+    },
+    {
+      "tag": "p",
+      "title": "28 Dec 2017",
+      "content": "279.00"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Managing Director<!-- --> </b>: <!-- -->A Venkataramani"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Independent Director<!-- --> </b>: <!-- -->Sandhya Shekhar"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Independent Director<!-- --> </b>: <!-- -->Vikram Vijayaraghavan"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Independent Director<!-- --> </b>: <!-- -->Navin Paul"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Nominee<!-- --> </b>: <!-- -->Ryosuke Hasumi"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Non Executive Director<!-- --> </b>: <!-- -->M. Govindarajan"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Company Sec. &amp; Compli. Officer<!-- --> </b>: <!-- -->Amarnath Tripathy"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Independent Director<!-- --> </b>: <!-- -->ANANDI IYER"
+    },
+    {
+      "tag": "p",
+      "content": "<b>Registered Office</b>: <!-- -->D11/12 Industrial Estate<!-- -->, <!-- -->Maraimalai Nagar Kancheepuram<!-- -->,<!-- -->Chennai<!-- -->,<!-- -->Tamil Nadu<!-- -->-<!-- -->603209<!-- --> Ph: <!-- -->91-44-27452816/27452924/27452853<!-- --> "
+    },
+    {
+      "tag": "p",
+      "content": "<b>Email</b>:"
+    },
+    {
+      "tag": "p",
+      "content": "<b>URL</b>:"
+    },
+    {
+      "tag": "p",
+      "content": "<b>1. </b><b>What's the <!-- -->IP Rings Ltd<!-- --> share price today?</b><br/>IP Rings Ltd<!-- --> share price <!-- -->was<!-- --> Rs <!-- -->230.85<!-- --> at <!-- -->close<!-- --> on <!-- -->13th Sep 2024<!-- -->. <!-- -->IP Rings Ltd<!-- --> share price <!-- -->was<!-- --> <!-- -->up<!-- --> by <!-- -->0.00<!-- -->% <!-- -->over<!-- --> the previous closing price of Rs <!-- -->230.85<!-- -->. <!-- -->IP Rings Ltd<!-- --> share price trend:<ul><li class=\"faq-li\">Last 1 Month: <!-- -->IP Rings Ltd<!-- --> share price moved <!-- -->up<!-- --> by <!-- -->33.25<!-- -->% on <!-- -->BSE</li><li class=\"faq-li\">Last 3 Months: <!-- -->IP Rings Ltd<!-- --> share price moved <!-- -->up<!-- --> by <!-- -->17.21<!-- -->% on <!-- -->BSE</li><li class=\"faq-li\">Last 12 Months: <!-- -->IP Rings Ltd<!-- --> share price moved <!-- -->up<!-- --> by <!-- -->63.43<!-- -->% on <!-- -->BSE</li><li class=\"faq-li\">Last 3 Years: <!-- -->IP Rings Ltd<!-- --> price moved <!-- -->up<!-- --> by <!-- -->61.21<!-- -->% on <!-- -->BSE</li></ul>"
+    },
+    {
+      "tag": "p",
+      "content": "<b>2. </b><b>How can I quickly analyse the performance of the <!-- -->IP Rings Ltd<!-- --> stock?</b><br/>The performance of the <!-- -->IP Rings Ltd<!-- --> stock can be quickly analysed on the following metrics:<ul><li class=\"faq-li\">The stock's PE is <!-- -->_</li><li class=\"faq-li\">Price to book value ratio is <!-- -->2.76</li><li class=\"faq-li\">Dividend yield of <!-- -->0.00</li><li class=\"faq-li\">The EPS (trailing 12 months) of the <!-- -->IP Rings Ltd<!-- --> stock is Rs <!-- -->0.00</li></ul>"
+    },
+    {
+      "tag": "p",
+      "content": "<b>3. </b> <b>What is the market cap of <!-- -->IP Rings Ltd<!-- -->?</b><br/>IP Rings Ltd<!-- --> has a market capitalisation of Rs <!-- -->293<!-- --> crore."
+    },
+    {
+      "tag": "p",
+      "content": "<br/><b>4. </b> <b>What is <!-- -->IP Rings Ltd<!-- -->'s 52-week high/low share price?</b><br/>The <!-- -->IP Rings Ltd<!-- -->’s 52-week high share price is Rs <!-- -->262.40<!-- --> and 52-week low share price is Rs <!-- -->126.00<!-- -->."
+    },
+    {
+      "tag": "p",
+      "content": "<br/><b>5. </b> <b>Is the <!-- -->IP Rings Ltd<!-- --> profitable?</b><br/>On a consolidated basis, <!-- -->IP Rings Ltd<!-- --> reported a <!-- -->profit<!-- --> of Rs <!-- -->0.29<!-- --> crore on a total income of Rs <!-- -->82.31<!-- --> crore for the quarter ended <!-- -->2024<!-- -->. For the year ended <!-- -->Jun 2024<!-- -->, <!-- -->IP Rings Ltd<!-- --> had posted a <!-- -->profit<!-- --> of Rs <!-- -->0.13<!-- --> crore on a total income of Rs <!-- -->82.31<!-- --> crore."
+    },
+    {
+      "tag": "p",
+      "content": "<br/><b>6. </b> <b>Which are <!-- -->IP Rings Ltd<!-- -->’s peers in the <!-- -->Auto <!-- --> sector?</b><br/>IP Rings Ltd<!-- -->’s top 5 peers in the <!-- -->Auto <!-- --> sector are<!-- --> Menon Pistons, <!-- --> Kinetic Engg., <!-- --> Rane Engine Val., <!-- --> Omax Autos, <!-- --> Samkrg Pistons, <!-- --> SAL Automotive, <!-- --> Machino Plastics<!-- -->."
+    },
+    {
+      "tag": "p",
+      "content": "<br/><b>7. </b> <b>Who owns how much in <!-- -->IP Rings Ltd<!-- -->?</b><br/>Key changes to the <!-- -->IP Rings Ltd<!-- --> shareholding are as follows:<ul><li class=\"faq-li\">Promoter holding in <!-- -->IP Rings Ltd<!-- --> has gone <!-- -->up<!-- --> to <!-- -->56.58<!-- --> per cent as of <!-- -->Jun 2024<!-- --> from <!-- -->56.58<!-- --> per cent as of <!-- -->Sep 2023<!-- -->.</li></ul>"
+    }
+  ]
+}

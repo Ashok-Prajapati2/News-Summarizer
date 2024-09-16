@@ -1,6 +1,11 @@
-Flask
 beautifulsoup4
 requests
 httpx
 python-dotenv
 groq
+flask
+flask-login 
+pymongo 
+flask-bcrypt  
+
+flask-socketio
