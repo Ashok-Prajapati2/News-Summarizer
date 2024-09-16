@@ -4,9 +4,11 @@ import json
 from bs4 import BeautifulSoup 
 from .fulltext import fetch_article
 from datetime import datetime, timedelta
-
-api_key = 'AIzaSyBvOwq0KQb5kysEGotH9iJyDszrmUsgaAs'
-search_engine_id = 'f6f224622aa0846a3'
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv('api_key')
+search_engine_id = os.getenv('search_engine_id')
 
 async def fetch_results(query):
     date_15_days_ago = (datetime.now() - timedelta(days=20)).strftime("%Y-%m-%d")

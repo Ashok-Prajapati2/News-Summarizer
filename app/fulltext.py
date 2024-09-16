@@ -33,13 +33,3 @@ def fetch_article(url,query):
     except requests.RequestException as e:
         print(f"Request error occurred: {e}")
     return None
-
-# if __name__ == "__main__":
-#     url = 'https://indianexpress.com/article/technology/tech-news-technology/tech-news-today-23-december-2023-instagram-openai-9080092/'
-#     article = fetch_article(url)
-    
-#     if article:
-#         print("Title:\n", article['title'])
-#         print("\nContent:\n", article['content'])
-#     else:
-#         print("Failed to fetch the article.")
