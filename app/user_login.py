@@ -25,29 +25,40 @@ def load_user(user_id):
 
 auth_bp = Blueprint('auth', __name__)
 
+
 @auth_bp.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        category = request.form.get('category')  
+        manual_category = request.form.get('manualCategory')
+
+        if category == 'other' and manual_category:
+            category = manual_category
 
         if users_collection.find_one({'username': username}):
             flash('Username already exists!')
             return redirect(url_for('auth.signup'))
 
+     
         hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
         user_id = users_collection.insert_one({
             'username': username,
-            'password': hashed_password
+            'password': hashed_password,
+            'category': category  
         }).inserted_id
 
+        # Create user object and log them in
         user = User(str(user_id), username)
         login_user(user)
 
         flash('Signup successful!')
-        return redirect(url_for('auth.login'))   
+        return redirect(url_for('auth.login'))
+
     return render_template('signup.html')
+
 
 @auth_bp.route('/login', methods=['GET', 'POST'])
 def login():

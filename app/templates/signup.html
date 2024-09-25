@@ -10,8 +10,37 @@
     <form method="POST" action="{{ url_for('auth.signup') }}">
         <input type="text" name="username" placeholder="Username" required><br><br>
         <input type="password" name="password" placeholder="Password" required><br><br>
+        <h2>Select or Enter a Category</h2>
+        <label for="categorySelect">Choose a category:</label>
+        <select id="categorySelect" name="category" onchange="checkOtherOption()">
+            <option value="technology">Technology</option>
+            <option value="health">Health</option>
+            <option value="education">Education</option>
+            <option value="finance">Finance</option>
+            <option value="other">Other (Enter Manually)</option>
+        </select>
+        <div id="manualEntry" style="display: none; margin-top: 10px;">
+            <label for="manualCategory">Enter your category:</label>
+            <input type="text" id="manualCategory" name="manualCategory">
+        </div>
         <button type="submit">Signup</button>
+    </form>
+
+
+
     </form>
     <p>Already have an account? <a href="{{ url_for('auth.login') }}">Login</a></p>
 </body>
 </html>
+
+<script>
+    function checkOtherOption() {
+        const select = document.getElementById('categorySelect');
+        const manualEntry = document.getElementById('manualEntry');
+        if (select.value === 'other') {
+            manualEntry.style.display = 'block';
+        } else {
+            manualEntry.style.display = 'none';
+        }
+    }
+</script>

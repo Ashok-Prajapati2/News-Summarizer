@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash,session
-from flask_login import login_required, current_user
+from flask_login import login_required , current_user
 import asyncio
-from .scraper import main
+from .scraper import save_results_to_mongo
 from .user_login import auth_bp, login_manager
 
 
@@ -16,7 +16,7 @@ def index():
     username = session.get('username')
     if not current_user.is_authenticated:
         return redirect(url_for('auth.login'))  
-    return render_template('index.html',username=username,user=current_user)
+    return render_template('index.html',username=username)
 
 @app.route('/search', methods=['POST'])
 @login_required
@@ -24,9 +24,11 @@ def search():
     query = request.form.get('query')
     if query:
         try:
+            query = [query]
             print(query)
-            articles = asyncio.run(main(query))
-            return render_template('index.html', articles=articles)
+            articles = asyncio.run(save_results_to_mongo(query))
+            print("Run Succfully")
+            return render_template('index.html')
         except Exception as e:
             flash('An error occurred while searching for articles. Please try again.')
             print(f'Error: {e}') 
