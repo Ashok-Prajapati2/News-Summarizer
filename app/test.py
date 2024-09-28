@@ -1,6 +1,6 @@
 def chatbot():
     question = request.form['question']
-    article_id = request.form['article_id']  # Assume we get the article ID from the frontend
+    article_id = request.form['article_id']  
     article = articles_collection.find_one({"_id": article_id})
 
     if article and question in article['text_content']:
