@@ -1,0 +1,3169 @@
+<body>
+ <div class="grid no_max_width">
+  <div class="col twelve_col nomargin shadow">
+   <form action="/gene" enctype="application/x-www-form-urlencoded" id="EntrezForm" method="post" name="EntrezForm" onsubmit="return false;">
+    <div xmlns:xi="http://www.w3.org/2001/XInclude">
+     <!-- no javascript message -->
+     <noscript>
+      <p class="nojs">
+       <strong>
+        Warning:
+       </strong>
+       The NCBI web site requires JavaScript to function.
+      </p>
+     </noscript>
+     <div id="universal_header" xml:base="http://127.0.0.1/sites/static/header_footer/" xmlns="http://www.w3.org/1999/xhtml">
+      <section class="usa-banner">
+       <div class="usa-accordion">
+        <div aria-hidden="true" class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner-top">
+         <div class="usa-banner-guidance-gov usa-width-one-half">
+          <img alt="Dot gov" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-dot-gov.svg"/>
+          <div class="usa-media_block-body">
+           <p>
+            <strong>
+             The .gov means it's official.
+            </strong>
+            <br/>
+            Federal government websites often end in .gov or .mil. Before
+							sharing sensitive information, make sure you're on a federal
+							government site.
+           </p>
+          </div>
+         </div>
+         <div class="usa-banner-guidance-ssl usa-width-one-half">
+          <img alt="Https" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-https.svg"/>
+          <div class="usa-media_block-body">
+           <p>
+            <strong>
+             The site is secure.
+            </strong>
+            <br/>
+            The
+            <strong>
+             https://
+            </strong>
+            ensures that you are connecting to the
+							official website and that any information you provide is encrypted
+							and transmitted securely.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <div class="usa-overlay">
+      </div>
+      <div aria-label="access keys" role="navigation">
+      </div>
+      <section data-section="Alerts">
+       <div class="ncbi-alerts-placeholder">
+       </div>
+      </section>
+     </div>
+     <div class="header">
+      <!-- logo -->
+      <div class="res_logo" id="top">
+       <h1 class="res_name">
+       </h1>
+       <h2 class="res_tagline">
+        Genes and mapped phenotypes
+       </h2>
+      </div>
+      <!-- SearchBar -->
+      <div class="search">
+       <div class="search_form">
+        <label class="offscreen_noflow" for="database">
+         Search database
+        </label>
+        <select id="database">
+         <option value="gquery">
+          All Databases
+         </option>
+         <option data-ac_dict="assembly" value="assembly">
+          Assembly
+         </option>
+         <option value="biocollections">
+          Biocollections
+         </option>
+         <option value="bioproject">
+          BioProject
+         </option>
+         <option value="biosample">
+          BioSample
+         </option>
+         <option value="books">
+          Books
+         </option>
+         <option value="clinvar">
+          ClinVar
+         </option>
+         <option value="cdd">
+          Conserved Domains
+         </option>
+         <option value="gap">
+          dbGaP
+         </option>
+         <option value="dbvar">
+          dbVar
+         </option>
+         <option data-ac_dict="gene" selected="selected" value="gene">
+          Gene
+         </option>
+         <option data-ac_dict="genome" value="genome">
+          Genome
+         </option>
+         <option value="gds">
+          GEO DataSets
+         </option>
+         <option value="geoprofiles">
+          GEO Profiles
+         </option>
+         <option value="gtr">
+          GTR
+         </option>
+         <option value="ipg">
+          Identical Protein Groups
+         </option>
+         <option value="medgen">
+          MedGen
+         </option>
+         <option value="mesh">
+          MeSH
+         </option>
+         <option value="nlmcatalog">
+          NLM Catalog
+         </option>
+         <option data-ac_dict="nuccore" value="nuccore">
+          Nucleotide
+         </option>
+         <option value="omim">
+          OMIM
+         </option>
+         <option value="pmc">
+          PMC
+         </option>
+         <option value="popset">
+          PopSet
+         </option>
+         <option data-ac_dict="protein" value="protein">
+          Protein
+         </option>
+         <option value="proteinclusters">
+          Protein Clusters
+         </option>
+         <option value="protfam">
+          Protein Family Models
+         </option>
+         <option value="pcassay">
+          PubChem BioAssay
+         </option>
+         <option value="pccompound">
+          PubChem Compound
+         </option>
+         <option value="pcsubstance">
+          PubChem Substance
+         </option>
+         <option value="pubmed">
+          PubMed
+         </option>
+         <option value="snp">
+          SNP
+         </option>
+         <option value="sra">
+          SRA
+         </option>
+         <option value="structure">
+          Structure
+         </option>
+         <option value="taxonomy">
+          Taxonomy
+         </option>
+         <option value="toolkit">
+          ToolKit
+         </option>
+         <option value="toolkitall">
+          ToolKitAll
+         </option>
+         <option value="toolkitbookgh">
+          ToolKitBookgh
+         </option>
+        </select>
+        <div class="nowrap">
+         <label accesskey="/" class="offscreen_noflow" for="term">
+          Search term
+         </label>
+         <div class="nowrap">
+          <input autocomplete="off" class="jig-ncbiclearbutton jig-ncbiautocomplete" data-jigconfig="dictionary:'gene',disableUrl:'NcbiSearchBarAutoComplCtrl'" data-sbconfig="ds:'no',pjs:'yes',afs:'yes'" id="term" name="term" title="Search Gene. Use up and down arrows to choose an item from the autocomplete." type="text" value=""/>
+         </div>
+         <button class="button_search nowrap" cmd="go" id="search" type="submit">
+          Search
+         </button>
+        </div>
+       </div>
+       <ul class="searchlinks inline_list">
+        <set>
+        </set>
+        <li>
+        </li>
+        <li class="help">
+        </li>
+       </ul>
+      </div>
+     </div>
+     <input name="EntrezSystem2.PEntrez.Gene.Gene_PageController.PreviousPageName" sid="1" type="hidden" value="results"/>
+     <div class="facet_hide" id="faceted_search">
+      <h2 class="offscreen_noflow">
+       Result Filters
+      </h2>
+      <div class="facet_cont" data-db="gene" data-default_grps="fg_gene-sources,fg_categories,fg_sequence-content,fg_status" data-sd="db:'gene',op:'select',term:'',qk:'1',linkname:'',idsfromresult:'6401',extra:''">
+       <ul class="facet" data-filter_id="gene-sources" id="_gene-sources">
+        <li class="filter_grp">
+         <div class="clearfix">
+          <h3>
+           Gene sources
+          </h3>
+         </div>
+         <ul>
+          <li class="fil_val">
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="facet" data-filter_id="categories" id="_categories">
+        <li class="filter_grp">
+         <div class="clearfix">
+          <h3>
+           Categories
+          </h3>
+         </div>
+         <ul>
+          <li class="fil_val">
+          </li>
+          <li class="fil_val">
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="facet" data-filter_id="sequence-content" id="_sequence-content">
+        <li class="filter_grp">
+         <div class="clearfix">
+          <h3>
+           Sequence content
+          </h3>
+         </div>
+         <ul>
+          <li class="fil_val">
+          </li>
+          <li class="fil_val">
+          </li>
+          <li class="fil_val">
+          </li>
+          <li class="fil_val">
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="facet" data-filter_id="status" id="_status">
+        <li class="filter_grp">
+         <div class="clearfix">
+          <h3>
+           Status
+          </h3>
+         </div>
+         <ul>
+          <li class="fil_val selected">
+           <span class="fcount">
+            (1)
+           </span>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <div class="disabled" data-bid="MCID_66f7b98f1fbe7578cd0e6c25" data-hid="MCID_66f7b98f1fbe7578cd0e6c29" data-qky="1" id="chr-location-facet-wrapper" style="display:none">
+        <ul class="facet" data-filter_id="chromosomal-region" data-of="yes" id="_chromosomal-region">
+         <li class="filter_grp of_grp">
+          <div class="clearfix">
+           <h3>
+            Chromosome locations
+           </h3>
+          </div>
+          <ul>
+           <div class="of_popup" id="facet_of_divchromosomal-region" style="display:none;">
+            <h4>
+             Chromosome locations
+            </h4>
+            <label class="" for="organism-filter" style="width:100%;margin-bottom:.2em;">
+             Select an organism by typing or scrolling
+            </label>
+            <input autocomplete="off" id="organism-filter" placeholder="Enter text to narrow down the list" style="width:98%;" type="text"/>
+            <br/>
+            <div id="chr-region-tax-list">
+             <select class="chr-region-tax-list" id="of_chromosomal-region" size="9" style="width:100%;">
+             </select>
+            </div>
+            <div data-disabled="disabled" id="chr-location-info-ctrl">
+             <div class="chr-field">
+              <label for="chr-name">
+               Chromosome
+              </label>
+              <br/>
+              <select class="chr-field" disabled="disabled" id="chr-name">
+              </select>
+             </div>
+             <div class="chr-field">
+              <label for="chr-from">
+               From
+              </label>
+              <br/>
+              <input class="chr-field" disabled="disabled" id="chr-from" name="chr-from" type="text"/>
+             </div>
+             <div class="chr-field">
+              <label for="chr-to">
+               To
+              </label>
+              <br/>
+              <input class="chr-field" disabled="disabled" id="chr-to" name="chr-to" type="text"/>
+             </div>
+            </div>
+            <div class="actions clearfix">
+             <button class="jig-ncbibutton of_add apply-chr" data-jigconfig="'color': 'ui-ncbibutton-blue'">
+              Apply
+             </button>
+            </div>
+           </div>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <ul class="facet facet_reset">
+        <li>
+        </li>
+       </ul>
+       <ul class="facet_tools">
+        <li>
+        </li>
+        <div class="facets_dialog" id="more_filter_groups" style="display:none;">
+         <button aria-disabled="false" class="ui-ncbipopper-close-button ui-ncbipopper-close-button-generated ui-state-default ui-corner-all ui-button-text-only ui-ncbibutton ui-ncbibutton-blue" generated="true" role="button">
+          <span class="ui-button-text">
+           x
+          </span>
+         </button>
+         <h4>
+          Additional filters
+         </h4>
+         <ul class="filter_groups_more facet">
+          <li>
+           <input id="fg_gene-sources" type="checkbox"/>
+           <label for="fg_gene-sources">
+            Gene sources
+           </label>
+          </li>
+          <li>
+           <input id="fg_categories" type="checkbox"/>
+           <label for="fg_categories">
+            Categories
+           </label>
+          </li>
+          <li>
+           <input id="fg_sequence-content" type="checkbox"/>
+           <label for="fg_sequence-content">
+            Sequence content
+           </label>
+          </li>
+          <li>
+           <input id="fg_status" type="checkbox"/>
+           <label for="fg_status">
+            Status
+           </label>
+          </li>
+          <li>
+           <input id="fg_chromosomal-region" type="checkbox"/>
+           <label for="fg_chromosomal-region">
+            Chromosome locations
+           </label>
+          </li>
+          <li>
+           <input id="fg_field_search" type="checkbox"/>
+           <label for="fg_field_search">
+            Search fields
+           </label>
+          </li>
+         </ul>
+         <div class="actions clearfix">
+          <button class="filter_groups_more_apply jig-ncbibutton primary-action" data-jigconfig="'color': 'ui-ncbibutton-blue'" id="filter_groups_apply">
+           Show
+          </button>
+         </div>
+        </div>
+       </ul>
+       <input name="EntrezSystem2.PEntrez.Gene.Gene_Facets.FacetsUrlFrag" sid="1" type="hidden" value="filters=current-only"/>
+       <input name="EntrezSystem2.PEntrez.Gene.Gene_Facets.FacetSubmitted" sid="1" type="hidden" value="false"/>
+       <input name="EntrezSystem2.PEntrez.Gene.Gene_Facets.BMFacets" sid="1" type="hidden" value=""/>
+      </div>
+     </div>
+     <div class="col nine_col" id="maincontent">
+      <div class="content" id="padded_content">
+       <!-- show or hide sidebar -->
+       <div class="sidecontentpullout_local" id="sidecontent_1_pullout" rel="1" style="position: fixed !important; top: 118px; z-index: 1000; cursor: pointer; right: 0px; width: 12px;display:none;">
+        <span style="display: block; text-align: center;">
+         S
+        </span>
+        <span style="display: block; text-align: center;">
+         I
+        </span>
+        <span style="display: block; text-align: center;">
+         D
+        </span>
+        <span style="display: block; text-align: center;">
+         E
+        </span>
+        <span style="display: block; text-align: center;">
+         B
+        </span>
+        <span style="display: block; text-align: center;">
+         A
+        </span>
+        <span style="display: block; text-align: center;">
+         R
+        </span>
+       </div>
+       <!-- end show or hide sidebar -->
+       <div class="results_settings one_setting">
+        <ul class="inline_list left display_settings">
+         <li>
+         </li>
+        </ul>
+        <div class="disp_settings tabPopper" id="display_settings_menu_report">
+         <fieldset class="format">
+          <legend>
+           Format
+          </legend>
+          <ul class="column_list">
+           <li>
+            <input checked="true" format="" id="full_report" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="1" type="radio" value="full_report"/>
+            <label for="full_report">
+             Full Report
+            </label>
+           </li>
+           <li>
+            <input format="text" id="full_reporttext" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="2" type="radio" value="full_report"/>
+            <label for="full_reporttext">
+             Full Report (text)
+            </label>
+           </li>
+           <li>
+            <input format="" id="expression" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="3" type="radio" value="expression"/>
+            <label for="expression">
+             Expression
+            </label>
+           </li>
+           <li>
+            <input format="" id="gene_table" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="4" type="radio" value="gene_table"/>
+            <label for="gene_table">
+             Gene Table
+            </label>
+           </li>
+           <li>
+            <input format="text" id="gene_tabletext" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="5" type="radio" value="gene_table"/>
+            <label for="gene_tabletext">
+             Gene Table (text)
+            </label>
+           </li>
+           <li>
+            <input format="" id="generif" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="6" type="radio" value="generif"/>
+            <label for="generif">
+             GeneRIF
+            </label>
+           </li>
+           <li>
+            <input format="" id="docsum" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="7" type="radio" value="docsum"/>
+            <label for="docsum">
+             Summary
+            </label>
+           </li>
+           <li>
+            <input format="text" id="docsumtext" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="8" type="radio" value="docsum"/>
+            <label for="docsumtext">
+             Summary (text)
+            </label>
+           </li>
+           <li>
+            <input format="" id="tabular" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="9" type="radio" value="tabular"/>
+            <label for="tabular">
+             Tabular
+            </label>
+           </li>
+           <li>
+            <input format="text" id="tabulartext" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="10" type="radio" value="tabular"/>
+            <label for="tabulartext">
+             Tabular (text)
+            </label>
+           </li>
+           <li>
+            <input format="text" id="asn1text" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="11" type="radio" value="asn1"/>
+            <label for="asn1text">
+             ASN.1
+            </label>
+           </li>
+           <li>
+            <input format="text" id="xmltext" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="12" type="radio" value="xml"/>
+            <label for="xmltext">
+             XML
+            </label>
+           </li>
+           <li>
+            <input format="text" id="uilisttext" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.sPresentation" sid="13" type="radio" value="uilist"/>
+            <label for="uilisttext">
+             UI List
+            </label>
+           </li>
+          </ul>
+         </fieldset>
+        </div>
+        <button class="button_apply ncbipopper-close-button" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SetDisplay" sid="1" style="display:none">
+         Apply
+        </button>
+        <h4 class="content_header send_to align_right jig-ncbipopper" data-jigconfig="triggerPosition:'bottom center', destPosition : 'top center',destSelector : '#send_to_menu', hasArrow : false,                 openEvent : 'click',closeEvent : 'click', isTriggerElementCloseClick: false, addCloseButton:true, groupName: 'entrez_pg', adjustFit:'none'" id="sendto">
+        </h4>
+        <div class="tabPopper send_to" id="send_to_menu">
+         <fieldset>
+          <legend>
+           Choose Destination
+          </legend>
+          <ul class="column_list">
+           <li>
+            <input id="dest_File" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SendTo" sid="1" type="radio" value="File"/>
+            <label for="dest_File">
+             File
+            </label>
+           </li>
+           <li>
+            <input id="dest_AddToClipboard" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SendTo" sid="2" type="radio" value="AddToClipboard"/>
+            <label for="dest_AddToClipboard">
+             Clipboard
+            </label>
+           </li>
+           <li>
+            <input id="dest_AddToCollections" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SendTo" sid="3" type="radio" value="AddToCollections"/>
+            <label for="dest_AddToCollections">
+             Collections
+            </label>
+           </li>
+          </ul>
+         </fieldset>
+         <div class="submenu file" id="submenu_File" style="display: none;">
+          <p class="hidden" id="submenu_File_hint">
+          </p>
+          <ul>
+           <li>
+            <label for="file_format">
+             Format
+            </label>
+            <select id="file_format" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.FFormat" sid="1">
+             <option format="text" selected="selected" value="full_report">
+              Full Report (text)
+             </option>
+             <option format="text" value="gene_table">
+              Gene Table (text)
+             </option>
+             <option format="text" value="docsum">
+              Summary (text)
+             </option>
+             <option format="text" value="tabular">
+              Tabular (text)
+             </option>
+             <option format="text" value="asn1">
+              ASN.1
+             </option>
+             <option format="text" value="xml">
+              XML
+             </option>
+             <option format="text" value="uilist">
+              UI List
+             </option>
+            </select>
+           </li>
+          </ul>
+          <button class="button_apply file ncbipopper-close-button" cmd="File" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SendToSubmit" sid="1" type="submit">
+           Create File
+          </button>
+         </div>
+         <div class="submenu addtoclipboard" id="submenu_AddToClipboard" style="display: none;">
+          <p class="hidden" id="submenu_AddToClipboard_hint">
+          </p>
+          <button class="button_apply clipboard ncbipopper-close-button" cmd="AddToClipboard" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SendToSubmit" sid="2" type="submit">
+           Add to Clipboard
+          </button>
+         </div>
+         <div class="submenu addtocollections" id="submenu_AddToCollections" style="display: none;">
+          <p class="hidden" id="submenu_AddToCollections_hint">
+          </p>
+          <button class="button_apply collections ncbipopper-close-button" cmd="AddToCollections" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.SendToSubmit" sid="3" type="submit">
+           Add to Collections
+          </button>
+         </div>
+        </div>
+        <div>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.FileFormat" sid="1" type="hidden" value="full_report"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.LastPresentation" sid="1" type="hidden" value="full_report"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.Presentation" sid="1" type="hidden" value="full_report"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.PageSize" sid="1" type="hidden" value="20"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.LastPageSize" sid="1" type="hidden" value="20"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.Sort" sid="1" type="hidden" value=""/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.LastSort" sid="1" type="hidden" value=""/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.FileSort" sid="1" type="hidden" value=""/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.Format" sid="1" type="hidden" value=""/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.LastFormat" sid="1" type="hidden" value=""/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.PrevPageSize" sid="1" type="hidden" value="20"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.PrevPresentation" sid="1" type="hidden" value="full_report"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_DisplayBar.PrevSort" sid="1" type="hidden" value=""/>
+         <input id="coll_startindex" name="CollectionStartIndex" type="hidden" value="1"/>
+        </div>
+       </div>
+       <div>
+       </div>
+       <div class="">
+        <div>
+         <span class="nowrap" id="result_sel">
+         </span>
+         <input id="resultcount" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_ResultsController.ResultCount" sid="1" type="hidden" value="1"/>
+         <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_ResultsController.RunLastQuery" sid="1" type="hidden"/>
+        </div>
+       </div>
+       <div class="empty" id="messagearea">
+       </div>
+       <div class="rprt full-rprt">
+        <div>
+         <div class="rprt-header">
+          <input id="gene-tax-id" type="hidden" value="9606"/>
+          <h1 class="title" id="gene-name">
+           <span class="gn" style="padding-right:.5em;">
+            SELE
+           </span>
+           selectin E [
+           <em class="tax">
+            Homo sapiens
+           </em>
+           (human)
+                ]
+          </h1>
+          <span class="geneid">
+           Gene ID: 6401, updated on
+                        18-Sep-2024
+          </span>
+         </div>
+         <div class="download-datasets">
+          <h4 aria-expanded="false" aria-haspopup="true" class="download-datasets-popper jig-ncbipopper" data-jigconfig="triggerPosition:'bottom center', destPosition : 'top center',destSelector : '#download-datasets-popper-menu', hasArrow : false,             openEvent : 'click',closeEvent : 'click', isTriggerElementCloseClick: false, groupName: 'entrez_pg', adjustFit:'none'" id="download-asm" role="button" style="align-self:start">
+           <svg alt="download" class="dlbtn-icon" enable-background="new 0 0 60 60" height="15px" viewbox="0 0 60 60" width="15px" x="0px" xml:space="preserve" y="0px">
+            <g>
+             <polygon points="48.75,36.25 48.75,48.75 11.25,48.75 11.25,36.25 5,36.25 5,55 55,55 55,36.25  ">
+             </polygon>
+             <polygon points="42.5,23.75 36.25,23.75 36.25,5 23.75,5 23.75,23.75 17.5,23.75 30,42.5  ">
+             </polygon>
+            </g>
+           </svg>
+          </h4>
+          <div id="download-datasets-popper-menu" style="display:none;">
+           <div class="input-group">
+            <input checked="checked" class="download-datasets-included-seq" id="datasets-ft-gene-seq-fasta" type="checkbox" value="FASTA_GENE"/>
+            <label for="datasets-ft-gene-seq-fasta">
+             Gene Sequences (FASTA)
+            </label>
+           </div>
+           <div class="input-group">
+            <input class="download-datasets-included-seq" id="datasets-ft-transcript-seq-fasta" type="checkbox" value="FASTA_RNA"/>
+            <label for="datasets-ft-transcript-seq-fasta">
+             Transcript sequences (FASTA)
+            </label>
+           </div>
+           <div class="input-group">
+            <input class="download-datasets-included-seq" id="datasets-ft-protein-seq-fasta" type="checkbox" value="FASTA_PROTEIN"/>
+            <label for="datasets-ft-protein-seq-fasta">
+             Protein sequences(FASTA)
+            </label>
+           </div>
+           <p style="margin-left:5px;">
+            In addition, your package will include a detailed data report in both TSV and JSONL formats.
+           </p>
+           <div class="input-group">
+            <label for="datasets-download-file-name">
+             File name
+            </label>
+            <input id="datasets-download-file-name" placeholder="Name your file" style="padding:5px;" type="text" value="SELE_datasets.zip"/>
+           </div>
+           <input id="download-datasets-base-url" type="hidden" value="https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/download"/>
+           <input id="gene-id-value" type="hidden" value="6401"/>
+           <button class="jig-ncbibutton ui-state-default ui-corner-all ui-button-text-only ui-ncbibutton ui-ncbibutton-gray" data-ga-action="click_begin_download" data-ga-label="download" id="datasets-download-submit" role="button">
+            <span class="ui-button-text">
+             Download
+            </span>
+           </button>
+          </div>
+         </div>
+        </div>
+        <div class="rprt-body">
+         <div class="rprt-section gene-summary">
+          <section class="rprt-section-header" id="summary">
+           <h2 id="header-summary">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <div class="section" id="summaryDiv">
+            <dl id="summaryDl">
+             <dt class="noline">
+              Official
+                         Symbol
+             </dt>
+             <dd class="noline">
+              SELE
+              <span class="prov">
+               provided by
+              </span>
+             </dd>
+             <dt>
+              Official
+                         Full Name
+             </dt>
+             <dd>
+              selectin E
+              <span class="prov">
+               provided by
+              </span>
+             </dd>
+             <dt>
+              Primary source
+             </dt>
+             <dd>
+             </dd>
+             <dt>
+              See related
+             </dt>
+             <dd>
+             </dd>
+             <dt>
+              Gene type
+             </dt>
+             <dd>
+              protein coding
+             </dd>
+             <dt>
+              RefSeq status
+             </dt>
+             <dd>
+              REVIEWED
+             </dd>
+             <dt>
+              Organism
+             </dt>
+             <dd class="tax">
+             </dd>
+             <dt>
+              Lineage
+             </dt>
+             <dd class="tax">
+              Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo
+             </dd>
+             <dt>
+              Also known as
+             </dt>
+             <dd>
+              ELAM; ESEL; CD62E; ELAM1; LECAM2; selectin-e
+             </dd>
+             <dt>
+              Summary
+             </dt>
+             <dd>
+              The protein encoded by this gene is found in cytokine-stimulated endothelial cells and is thought to be responsible for the accumulation of blood leukocytes at sites of inflammation by mediating the adhesion of cells to the vascular lining. It exhibits structural features such as the presence of lectin- and EGF-like domains followed by short consensus repeat (SCR) domains that contain 6 conserved cysteine residues. These proteins are part of the selectin family of cell adhesion molecules. Adhesion molecules participate in the interaction between leukocytes and the endothelium and appear to be involved in the pathogenesis of atherosclerosis. [provided by RefSeq, Jul 2008]
+             </dd>
+             <dt>
+              Expression
+             </dt>
+             <dd>
+              Biased expression in prostate (RPKM 16.5), urinary bladder (RPKM 15.5) and 12 other tissues
+             </dd>
+             <dt>
+              Orthologs
+             </dt>
+             <dd class="ortholog-links">
+             </dd>
+             <dt style="padding-top:.5em;">
+              <span class="new-icon">
+               NEW
+              </span>
+             </dt>
+             <dd style="padding-top:.5em;">
+              <strong>
+               Try the new
+              </strong>
+              <br/>
+              <strong>
+               Try the new
+              </strong>
+             </dd>
+            </dl>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-genomic-context">
+          <section class="rprt-section-header" id="genomic-context">
+           <h2 id="header-genomic-context">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <div class="gc_cont">
+            <div class="gt_cont_contents">
+             <div style="float:right">
+              <span>
+               See SELE in
+              </span>
+             </div>
+             <dl class="dl-chr-info" style="float:left;margin-top:0;">
+              <dt>
+               Location:
+              </dt>
+              <dd>
+               <span style="display:inline-block;">
+                1q24.2
+               </span>
+              </dd>
+             </dl>
+            </div>
+            <dl class="dl-chr-info exon-count">
+             <dt>
+              Exon count:
+             </dt>
+             <dd>
+              14
+             </dd>
+            </dl>
+            <div class="ui-ncbigrid-outer-div" id="genomic-context-tbl-location">
+             <div class="ui-ncbigrid-inner-div">
+              <table class="jig-ncbigrid" data-jigconfig="">
+               <thead>
+                <tr>
+                 <th style="max-width:15%">
+                  Annotation release
+                 </th>
+                 <th style="max-width:10%">
+                  Status
+                 </th>
+                 <th>
+                  Assembly
+                 </th>
+                 <th>
+                  <span title="Chromosome">
+                   Chr
+                  </span>
+                 </th>
+                 <th>
+                  Location
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  RS_2024_08
+                 </td>
+                 <td>
+                  current
+                 </td>
+                 <td>
+                  GRCh38.p14 (
+                  )
+                 </td>
+                 <td>
+                  1
+                 </td>
+                 <td>
+                  NC_000001.11 (169722640..169734079, complement)
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  RS_2024_08
+                 </td>
+                 <td>
+                  current
+                 </td>
+                 <td>
+                  T2T-CHM13v2.0 (
+                  )
+                 </td>
+                 <td>
+                  1
+                 </td>
+                 <td>
+                  NC_060925.1 (169078428..169089853, complement)
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  RS_2024_09
+                 </td>
+                 <td>
+                  previous assembly
+                 </td>
+                 <td>
+                  GRCh37.p13 (
+                  )
+                 </td>
+                 <td>
+                  1
+                 </td>
+                 <td>
+                  NC_000001.10 (169691781..169703220, complement)
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+            </div>
+           </div>
+           <p class="withnote margin_t2em">
+            <strong>
+             Chromosome 1 - NC_000001.11
+            </strong>
+            <img alt="Genomic Context describing neighboring genes" border="0" src="/gutils/geneneighb.fcgi?geneid=6401&amp;nuc_gi=568815597&amp;n0=LOC107985745&amp;n1=LOC127270801&amp;n2=LOC129931897&amp;n3=SELL&amp;n4=LOC129931898&amp;n5=SELE&amp;n6=LOC101928628&amp;n7=LOC127270802&amp;n8=FIRRM&amp;n9=METTL18&amp;n10=LOC129931899" usemap="#nbrMap6401_568815597"/>
+            <map id="nbrMap6401_568815597" name="nbrMap6401_568815597">
+             <area alt="Neighboring gene uncharacterized LOC107985745" coords="2,23,104,31" href="/gene/107985745" onmouseout="hidetip()" onmouseover="showtip(this,event,'uncharacterized LOC107985745')" shape="rect"/>
+             <area alt="Neighboring gene H3K27ac-H3K4me1 hESC enhancer GRCh37_chr1:169636965-169637470" coords="12,35,82,43" href="/gene/127270801" onmouseout="hidetip()" onmouseover="showtip(this,event,'H3K27ac-H3K4me1 hESC enhancer GRCh37_chr1:169636965-169637470')" shape="rect"/>
+             <area alt="Neighboring gene ATAC-STARR-seq lymphoblastoid active region 2077" coords="36,47,106,55" href="/gene/129931897" onmouseout="hidetip()" onmouseover="showtip(this,event,'ATAC-STARR-seq lymphoblastoid active region 2077')" shape="rect"/>
+             <area alt="Neighboring gene ATAC-STARR-seq lymphoblastoid active region 2078" coords="67,59,137,67" href="/gene/129931898" onmouseout="hidetip()" onmouseover="showtip(this,event,'ATAC-STARR-seq lymphoblastoid active region 2078')" shape="rect"/>
+             <area alt="Neighboring gene selectin L" coords="95,35,156,43" href="/gene/6402" onmouseout="hidetip()" onmouseover="showtip(this,event,'selectin L')" shape="rect"/>
+             <area alt="Neighboring gene uncharacterized LOC101928628" coords="190,35,260,43" href="/gene/101928628" onmouseout="hidetip()" onmouseover="showtip(this,event,'uncharacterized LOC101928628')" shape="rect"/>
+             <area alt="Neighboring gene H3K27ac hESC enhancer GRCh37_chr1:169751147-169751648" coords="226,23,296,31" href="/gene/127270802" onmouseout="hidetip()" onmouseover="showtip(this,event,'H3K27ac hESC enhancer GRCh37_chr1:169751147-169751648')" shape="rect"/>
+             <area alt="Neighboring gene ATAC-STARR-seq lymphoblastoid active region 2079" coords="250,47,320,55" href="/gene/129931899" onmouseout="hidetip()" onmouseover="showtip(this,event,'ATAC-STARR-seq lymphoblastoid active region 2079')" shape="rect"/>
+             <area alt="Neighboring gene FIGNL1 interacting regulator of recombination and mitosis" coords="264,35,423,43" href="/gene/55732" onmouseout="hidetip()" onmouseover="showtip(this,event,'FIGNL1 interacting regulator of recombination and mitosis')" shape="rect"/>
+             <area alt="Neighboring gene methyltransferase 18, RPL3 N3(tau)-histidine" coords="271,59,316,67" href="/gene/92342" onmouseout="hidetip()" onmouseover="showtip(this,event,'methyltransferase 18, RPL3 N3(tau)-histidine')" shape="rect"/>
+            </map>
+           </p>
+          </div>
+         </div>
+         <div class="rprt-section gene-genomic-regions-transcripts-products">
+          <section class="rprt-section-header" id="genomic-regions-transcripts-products">
+           <h2 id="header-genomic-regions-transcripts-products">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <div>
+            <div style="text-align:right;">
+             Go to
+            </div>
+           </div>
+           <div>
+            <p class="choose">
+             <label class="label" for="accession">
+              Genomic Sequence:
+             </label>
+             <select data-geneid="6401" data-taxid="9606" id="accessionList" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.accessionList" sid="1">
+              <option value="NC_000001.11_169722639_169734078">
+               NC_000001.11 Chromosome 1 Reference GRCh38.p14 Primary Assembly
+              </option>
+              <option value="NG_012124.1_5000_16439">
+               NG_012124.1 RefSeqGene
+              </option>
+              <option value="NC_060925.1_169078427_169089852">
+               NC_060925.1 Chromosome 1 Alternate T2T-CHM13v2.0
+              </option>
+              <option value="NC_000001.10_169691780_169703219">
+               NC_000001.10 Chromosome 1 Reference GRCh37.p13 Primary Assembly
+              </option>
+             </select>
+            </p>
+           </div>
+           <div class="divAccession" id="NC_000001">
+            <div class="seq-viewer">
+             <p class="note-link">
+              <strong>
+               Go to nucleotide:
+              </strong>
+             </p>
+             <div class="SeqViewerApp" data-sv="appname=ncbigene&amp;embedded=true&amp;noslider=1&amp;id=NC_000001.11&amp;from=169720923&amp;to=169735794&amp;strand=true&amp;app_context=Gene&amp;assm_context=GCF_000001405.40" id="divNC_000001" style="clear:both;">
+             </div>
+            </div>
+           </div>
+           <input id="nucleotideLink_NC_000001_11_169722639_169734078" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.nucleotideLink_NC_000001.11" sid="1" type="hidden" value='&lt;p class="note-link"&gt;&lt;strong&gt;Go to nucleotide:&lt;/strong&gt;&lt;a title="Nucleotide Graphic report" href="/nuccore/NC_000001.11?report=graph&amp;amp;from=169720923&amp;amp;to=169735794&amp;amp;strand=true&amp;amp;app_context=Gene&amp;amp;assm_context=GCF_000001405.40" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_000001.11"&gt;Graphics&lt;/a&gt;&lt;a title="Nucleotide FASTA report" href="/nuccore/NC_000001.11?report=fasta&amp;amp;from=169722640&amp;amp;to=169734079&amp;amp;strand=true" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_000001.11"&gt;FASTA&lt;/a&gt;&lt;a title="Nucleotide GenBank report" href="/nuccore/NC_000001.11?report=genbank&amp;amp;from=169722640&amp;amp;to=169734079&amp;amp;strand=true" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_000001.11"&gt;GenBank&lt;/a&gt;&lt;/p&gt;'/>
+           <input id="relString_NC_000001_11_169722639_169734078" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.relString_NC_000001.11" sid="1" type="hidden" value="appname=ncbigene&amp;amp;embedded=true&amp;amp;noslider=1&amp;amp;id=NC_000001.11&amp;amp;from=169720923&amp;amp;to=169735794&amp;amp;strand=true&amp;amp;app_context=Gene&amp;amp;assm_context=GCF_000001405.40"/>
+           <input id="nucleotideLink_NG_012124_1_5000_16439" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.nucleotideLink_NG_012124.1" sid="1" type="hidden" value='&lt;p class="note-link"&gt;&lt;strong&gt;Go to nucleotide:&lt;/strong&gt;&lt;a title="Nucleotide Graphic report" href="/nuccore/NG_012124.1?report=graph&amp;amp;from=3284&amp;amp;to=18155&amp;amp;tracks=[key:sequence_track,name:Sequence,display_name:Sequence,category:Sequence,annots:Sequence,ShowLabel:false][key:gene_model_track,name:Genes---Unnamed,display_name:Genes,annots:Unnamed,Options:ShowAllButGenes,SNPs:false,CDSProductFeats:false,ShowLabelsForAllFeatures:true,HighlightMode:2][key:SNP_track,name:SNP,annots:SNP,Layout:Adaptive][key:SNP_Bins_track,name:Clinical Variants][key:SNP_Bins_track,name:Cited Variants][key:GWAS_track,name:GWAS Tracks,display_name:Association Results][key:alignment_track,category:Alignments,annots:Unnamed][key:alignment_track,category:Alignments,annots:NA000079160.1][key:alignment_track,category:Alignments,annots:NA000010065.1]" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NG_012124.1"&gt;Graphics&lt;/a&gt;&lt;a title="Nucleotide FASTA report" href="/nuccore/NG_012124.1?report=fasta&amp;amp;from=5001&amp;amp;to=16440" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NG_012124.1"&gt;FASTA&lt;/a&gt;&lt;a title="Nucleotide GenBank report" href="/nuccore/NG_012124.1?report=genbank&amp;amp;from=5001&amp;amp;to=16440" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NG_012124.1"&gt;GenBank&lt;/a&gt;&lt;/p&gt;'/>
+           <input id="relString_NG_012124_1_5000_16439" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.relString_NG_012124.1" sid="1" type="hidden" value="appname=ncbigene&amp;amp;embedded=true&amp;amp;noslider=1&amp;amp;id=NG_012124.1&amp;amp;from=3284&amp;amp;to=18155&amp;amp;tracks=[key:sequence_track,name:Sequence,display_name:Sequence,category:Sequence,annots:Sequence,ShowLabel:false][key:gene_model_track,name:Genes---Unnamed,display_name:Genes,annots:Unnamed,Options:ShowAllButGenes,SNPs:false,CDSProductFeats:false,ShowLabelsForAllFeatures:true,HighlightMode:2][key:SNP_track,name:SNP,annots:SNP,Layout:Adaptive][key:SNP_Bins_track,name:Clinical Variants][key:SNP_Bins_track,name:Cited Variants][key:GWAS_track,name:GWAS Tracks,display_name:Association Results][key:alignment_track,category:Alignments,annots:Unnamed][key:alignment_track,category:Alignments,annots:NA000079160.1][key:alignment_track,category:Alignments,annots:NA000010065.1]"/>
+           <input id="nucleotideLink_NC_060925_1_169078427_169089852" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.nucleotideLink_NC_060925.1" sid="1" type="hidden" value='&lt;p class="note-link"&gt;&lt;strong&gt;Go to nucleotide:&lt;/strong&gt;&lt;a title="Nucleotide Graphic report" href="/nuccore/NC_060925.1?report=graph&amp;amp;from=169076713&amp;amp;to=169091566&amp;amp;strand=true&amp;amp;app_context=Gene&amp;amp;assm_context=GCF_009914755.1" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_060925.1"&gt;Graphics&lt;/a&gt;&lt;a title="Nucleotide FASTA report" href="/nuccore/NC_060925.1?report=fasta&amp;amp;from=169078428&amp;amp;to=169089853&amp;amp;strand=true" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_060925.1"&gt;FASTA&lt;/a&gt;&lt;a title="Nucleotide GenBank report" href="/nuccore/NC_060925.1?report=genbank&amp;amp;from=169078428&amp;amp;to=169089853&amp;amp;strand=true" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_060925.1"&gt;GenBank&lt;/a&gt;&lt;/p&gt;'/>
+           <input id="relString_NC_060925_1_169078427_169089852" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.relString_NC_060925.1" sid="1" type="hidden" value="appname=ncbigene&amp;amp;embedded=true&amp;amp;noslider=1&amp;amp;id=NC_060925.1&amp;amp;from=169076713&amp;amp;to=169091566&amp;amp;strand=true&amp;amp;app_context=Gene&amp;amp;assm_context=GCF_009914755.1"/>
+           <input id="nucleotideLink_NC_000001_10_169691780_169703219" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.nucleotideLink_NC_000001.10" sid="1" type="hidden" value='&lt;p class="note-link"&gt;&lt;strong&gt;Go to nucleotide:&lt;/strong&gt;&lt;a title="Nucleotide Graphic report" href="/nuccore/NC_000001.10?report=graph&amp;amp;from=169690064&amp;amp;to=169704935&amp;amp;strand=true&amp;amp;app_context=Gene&amp;amp;assm_context=GCF_000001405.25" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_000001.10"&gt;Graphics&lt;/a&gt;&lt;a title="Nucleotide FASTA report" href="/nuccore/NC_000001.10?report=fasta&amp;amp;from=169691781&amp;amp;to=169703220&amp;amp;strand=true" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_000001.10"&gt;FASTA&lt;/a&gt;&lt;a title="Nucleotide GenBank report" href="/nuccore/NC_000001.10?report=genbank&amp;amp;from=169691781&amp;amp;to=169703220&amp;amp;strand=true" ref="ordinalpos=1&amp;amp;ncbi_uid=6401&amp;amp;link_uid=NC_000001.10"&gt;GenBank&lt;/a&gt;&lt;/p&gt;'/>
+           <input id="relString_NC_000001_10_169691780_169703219" name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.Gene_RVFullReport.Gene_GenomicProductsP.relString_NC_000001.10" sid="1" type="hidden" value="appname=ncbigene&amp;amp;embedded=true&amp;amp;noslider=1&amp;amp;id=NC_000001.10&amp;amp;from=169690064&amp;amp;to=169704935&amp;amp;strand=true&amp;amp;app_context=Gene&amp;amp;assm_context=GCF_000001405.25"/>
+          </div>
+         </div>
+         <div class="rprt-section gene-gene-expression">
+          <section class="rprt-section-header" id="gene-expression">
+           <h2 id="header-gene-expression">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <div>
+            <div style="text-align:right;">
+            </div>
+            <div data-report-type="summary" data-url="https://www.ncbi.nlm.nih.gov/gene/6401" id="gene-expression-app">
+             <div>
+              <div>
+               <select id="project-selector" name="p">
+                <option data-bioproject="PRJNA270632" value="SRP051249">
+                 Tissue-specific circular RNA induction during human fetal development
+                </option>
+                <option data-bioproject="PRJEB4337" selected="selected" value="ERP003613">
+                 HPA RNA-seq normal tissues
+                </option>
+                <option data-bioproject="PRJNA280600" value="SRP056969">
+                 RNA sequencing of total RNA from 20 human tissues
+                </option>
+               </select>
+               <ul id="project-summary">
+                <li id="project-summary-title">
+                 Project title: HPA RNA-seq normal tissues
+        
+            HPA RNA-seq normal tissues
+                </li>
+                <li id="project-summary-desc">
+                 Description: RNA-seq was performed of tissue samples from 95 human individuals representing 27 different tissues in order to determine tissue-specificity of all protein-coding genes
+                </li>
+                <li id="project-summary-bioprojects">
+                 BioProject:
+                </li>
+                <li id="project-summary-pubs">
+                 Publication:
+                 <span>
+                 </span>
+                </li>
+                <li id="project-summary-analysis-date">
+                 Analysis date: Wed Apr  4 07:08:55 2018
+                </li>
+               </ul>
+               <div class="expression-chart" id="gene-expr-details">
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-bibliography">
+          <section class="rprt-section-header" id="bibliography">
+           <h2 id="header-bibliography">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body" style="">
+           <div class="generif-pubmed">
+            <h3 id="relatedarticlesinpubmed">
+            </h3>
+            <div class="generefbl-link">
+             <ol class="generef-link">
+              <li>
+               <span class="pubmed-auth-date">
+                Agouti I,
+                <em>
+                 et al
+                </em>
+                . Eur J Haematol, 2023 Mar. PMID 36409296,
+                <span class="pubmed-pmc-link">
+                </span>
+               </span>
+              </li>
+              <li>
+               <span class="pubmed-auth-date">
+                Mezine F,
+                <em>
+                 et al
+                </em>
+                . Stem Cell Rev Rep, 2023 Jan. PMID 35982357,
+                <span class="pubmed-pmc-link">
+                </span>
+               </span>
+              </li>
+              <li>
+               <span class="pubmed-auth-date">
+                Zhang WJ,
+                <em>
+                 et al
+                </em>
+                . Clin Lab, 2022 Aug 1. PMID 35975500
+               </span>
+              </li>
+              <li>
+               <span class="pubmed-auth-date">
+                Al Alwan B,
+                <em>
+                 et al
+                </em>
+                . Commun Biol, 2021 Jul 14. PMID 34262131,
+                <span class="pubmed-pmc-link">
+                </span>
+               </span>
+              </li>
+              <li>
+               <span class="pubmed-auth-date">
+                Khoshbin M,
+                <em>
+                 et al
+                </em>
+                . Arch Physiol Biochem, 2023 Apr. PMID 33022186
+               </span>
+              </li>
+             </ol>
+             <p class="see-all-pm">
+             </p>
+            </div>
+           </div>
+           <div class="generif-pubmed generif">
+            <h3 id="generifsgenereferencesintofunctions">
+            </h3>
+            <div>
+             <div class="generefbl-link">
+              <ol class="generef-link">
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper1">
+                 Title: E-selectin is associated with stable angina and myocardial infarction in a sample of Kurdish population.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper2">
+                 Title: Targeting hematologic malignancies by inhibiting E-selectin: A sweet spot for AML therapy?
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper3">
+                 Title: PDGFRα(+)ITGA11(+) fibroblasts foster early-stage cancer lymphovascular invasion and lymphatic metastasis via ITGA11-SELE interplay.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper4">
+                 Title: PSGL-1 decorated with sialyl Lewis(a/x) promotes high affinity binding of myeloma cells to P-selectin but is dispensable for E-selectin engagement.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper5">
+                 Title: E-selectin-mediated rapid NLRP3 inflammasome activation regulates S100A8/S100A9 release from neutrophils via transient gasdermin D pore formation.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper6">
+                 Title: Adhesion Promotes Allergic Rhinitis CD4(+)IL4(+) T Cell Differentiation via ICAM1 and E-Selectin.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper7">
+                 Title: Association of E-Selectin gene polymorphisms and serum E-Selectin level with risk of coronary artery disease in lur population of Iran.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper8">
+                 Title: Differentiated serum levels of Krüppel-like factors 2 and 4, sP-selectin, and sE-selectin in patients with gestational diabetes mellitus.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper9">
+                 Title: Plasma levels of E-selectin are associated with retinopathy in sickle cell disease.
+                </div>
+               </li>
+               <li class="gene-rif-popper">
+                <div class="gene-rif-popper" id="gene-popper10">
+                 Title: Increased Circulating CD62E(+) Endothelial Extracellular Vesicles Predict Severity and in- Hospital Mortality of COVID-19 Patients.
+                </div>
+               </li>
+              </ol>
+             </div>
+             <div class="submit-genrif">
+              <span>
+               Submit:
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-phenotypes">
+          <section class="rprt-section-header" id="phenotypes">
+           <h2 id="header-phenotypes">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body info-phenotype">
+           <p class="nochild-link">
+           </p>
+           <p class="nochild-link">
+           </p>
+          </div>
+         </div>
+         <div class="rprt-section gene-variation">
+          <section class="rprt-section-header" id="variation">
+           <h2 id="header-variation">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <p class="nochild-link">
+           </p>
+           <p class="nochild-link">
+           </p>
+           <p class="nochild-link">
+           </p>
+           <p class="nochild-link">
+           </p>
+           <set>
+           </set>
+           <div class="infosec gene-genotype">
+            <h3 id="genotypes">
+            </h3>
+            <ul class="geneinfo-subsec">
+             <li>
+             </li>
+             <li>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-HIV-1-interactions">
+          <section class="rprt-section-header" id="HIV-1-interactions">
+           <h2 id="header-HIV-1-interactions">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <div class="fgrid">
+            <h3 id="proteininteractions">
+             Protein interactions
+            </h3>
+            <table class="jig-ncbigrid" summary="protein interactions">
+             <thead>
+              <tr>
+               <th id="hivprotein">
+                Protein
+               </th>
+               <th id="gene-hivprotein">
+                Gene
+               </th>
+               <th id="hivinter">
+                Interaction
+               </th>
+               <th id="hivpub">
+                Pubs
+               </th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+               <td headers="hivprotein">
+               </td>
+               <td headers="gene-hivprotein">
+               </td>
+               <td headers="hivinter">
+                Over-expression of PPARalpha or PPARgamma attenuates Tat-induced up-regulation of inflammatory mediators, such as interleukin (IL)-1beta, tumor necrosis factor-alpha, CCL2, and E-selectin
+               </td>
+               <td headers="hivpub">
+               </td>
+              </tr>
+              <tr>
+               <td headers="hivprotein">
+               </td>
+               <td headers="gene-hivprotein">
+               </td>
+               <td headers="hivinter">
+                HIV-1 Tat upregulates E-selectin (ELAM-1) in endothelial cells via an NF-kappa B-dependent mechanism
+               </td>
+               <td headers="hivpub">
+               </td>
+              </tr>
+             </tbody>
+            </table>
+            <p class="withnote">
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-pathways">
+          <section class="rprt-section-header" id="pathways">
+           <h2 id="header-pathways">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <ul class="geneinfo-subsec infopathway">
+            <iframe class="pubchem-widget" scrolling="no" src="https://pubchem.ncbi.nlm.nih.gov/gene/6401#section=Pathways&amp;embed=true&amp;hide_all_headings=true&amp;page_size=25" style="border: 0;  width: 100%;" title="Pathways in which the gene target is involved">
+            </iframe>
+           </ul>
+          </div>
+         </div>
+         <div class="rprt-section gene-interactions">
+          <section class="rprt-section-header" id="interactions">
+           <h2 id="header-interactions">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <table class="jig-ncbiservergrid" data-jigconfig="webservice:'/gene/6401/data/interaction/',webserviceParams: 'p$l=Ajax&amp;p$debugoutput=off', isServersideLoad:true, isServersidePaging: true,isServersidePagingCached: true,pageSize:25" summary="Gene Interaction">
+            <thead>
+             <tr>
+              <th id="inter-prod">
+               Products
+              </th>
+              <th id="inter-interactant">
+               Interactant
+              </th>
+              <th id="inter-otherGene">
+               Other Gene
+              </th>
+              <th id="inter-compl">
+               Complex
+              </th>
+              <th id="inter-source">
+               Source
+              </th>
+              <th id="inter-pubs">
+               Pubs
+              </th>
+              <th id="inter-desc">
+               Description
+              </th>
+             </tr>
+            </thead>
+            <tbody>
+            </tbody>
+           </table>
+          </div>
+         </div>
+         <div class="rprt-section gene-general-gene-info">
+          <section class="rprt-section-header" id="general-gene-info">
+           <h2 id="header-general-gene-info">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body" style="">
+           <div id="gene-markers">
+            <h3 id="markers">
+            </h3>
+            <div>
+             <ul class="marker odd">
+              <li class="marker">
+               RH17688 (e-PCR)
+               <ul class="marker-link">
+                <li>
+                </li>
+               </ul>
+              </li>
+             </ul>
+             <ul class="marker">
+              <li class="marker">
+               D1S332 (e-PCR)
+               <ul class="marker-link">
+                <li>
+                </li>
+               </ul>
+              </li>
+             </ul>
+             <ul class="marker odd">
+              <li class="marker">
+               D1S3363 (e-PCR)
+               <ul class="marker-link">
+                <li>
+                </li>
+               </ul>
+              </li>
+             </ul>
+             <ul class="marker">
+              <li class="marker">
+               GDB:592877 (e-PCR)
+               <ul class="marker-link">
+                <li>
+                </li>
+               </ul>
+              </li>
+             </ul>
+             <ul class="marker odd">
+              <li class="marker">
+               PMC97258P1 (e-PCR)
+               <ul class="marker-link">
+                <li>
+                </li>
+               </ul>
+              </li>
+             </ul>
+            </div>
+           </div>
+           <div>
+           </div>
+           <div class="infosec">
+            <h3 id="homology">
+            </h3>
+            <ul class="geneinfo-subsec">
+             <li>
+             </li>
+            </ul>
+           </div>
+           <!--<component id="Gene_InfoPathway"/>-->
+           <div class="gene-ontology infosec">
+            <h3 id="gene-ontology">
+            </h3>
+            <div class="ontology-tables">
+             <div class="ui-ncbigrid-outer-div">
+              <div class="ui-ncbigrid-inner-div">
+               <table class="jig-ncbigrid" data-jigconfig="isPageable: true, pageSize : 25, isSortable: true, columnTypes: ['str', 'str', 'str']">
+                <thead>
+                 <tr>
+                  <th class="col1">
+                   Function
+                  </th>
+                  <th style="width:12%;">
+                   Evidence Code
+                  </th>
+                  <th style="width:10%;">
+                   Pubs
+                  </th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-1-0">
+                    Inferred from Electronic Annotation
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-2-0">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-3-0">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-4-0">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-5-0">
+                    Inferred from Physical Interaction
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-6-0">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-7-0">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-func">
+                  </td>
+                  <td headers="ont-evi- ont-evi-code-">
+                   <div class="ecode" id="evidence-code-8-0">
+                    Inferred from Mutant Phenotype
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi- ont-pub-">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+             <div class="ui-ncbigrid-outer-div">
+              <div class="ui-ncbigrid-inner-div">
+               <table class="jig-ncbigrid" data-jigconfig="isPageable: true, pageSize : 25, isSortable: true, columnTypes: ['str', 'str', 'str']">
+                <thead>
+                 <tr>
+                  <th class="col1">
+                   Process
+                  </th>
+                  <th style="width:12%;">
+                   Evidence Code
+                  </th>
+                  <th style="width:10%;">
+                   Pubs
+                  </th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-1-1">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-2-1">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-3-1">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-4-1">
+                    Inferred from Mutant Phenotype
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-5-1">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-6-1">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-7-1">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-8-1">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-9-1">
+                    Inferred from Mutant Phenotype
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-10-1">
+                    Inferred from Mutant Phenotype
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-11-1">
+                    Inferred from Electronic Annotation
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-12-1">
+                    Inferred from Sequence or Structural Similarity
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-13-1">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-14-1">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-15-1">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-16-1">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-17-1">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-comp">
+                  </td>
+                  <td headers="ont-evi-2 ont-evi-code-2">
+                   <div class="ecode" id="evidence-code-18-1">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-2 ont-pub-2">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+             <div class="ui-ncbigrid-outer-div">
+              <div class="ui-ncbigrid-inner-div">
+               <table class="jig-ncbigrid" data-config="isPageable: true, pageSize : 25, isSortable: true, columnTypes: ['str', 'str', 'str']">
+                <thead>
+                 <tr>
+                  <th class="col1">
+                   Component
+                  </th>
+                  <th style="width:12%;">
+                   Evidence Code
+                  </th>
+                  <th style="width:10%;">
+                   Pubs
+                  </th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-1-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-2-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-3-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-4-2">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-5-2">
+                    Inferred from Biological aspect of Ancestor
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-6-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-7-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-8-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-9-2">
+                    Inferred from Direct Assay
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td headers="ont-proc">
+                  </td>
+                  <td headers="ont-evi-3 ont-evi-code-3">
+                   <div class="ecode" id="evidence-code-10-2">
+                    Traceable Author Statement
+                    <br/>
+                   </div>
+                  </td>
+                  <td headers="ont-evi-3 ont-pub-3">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-general-protein-info">
+          <section class="rprt-section-header" id="general-protein-info">
+           <h2 id="header-general-protein-info">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <dl>
+            <dt>
+             Preferred Names
+            </dt>
+            <dd>
+             E-selectin
+            </dd>
+           </dl>
+           <dl>
+            <dt>
+             Names
+            </dt>
+            <dd>
+             CD62 antigen-like family member E
+            </dd>
+            <dd>
+             ELAM-1
+            </dd>
+            <dd>
+             endothelial adhesion molecule 1
+            </dd>
+            <dd>
+             endothelial leukocyte adhesion molecule 1
+            </dd>
+            <dd>
+             leukocyte endothelial cell adhesion molecule 2
+            </dd>
+           </dl>
+          </div>
+         </div>
+         <div class="rprt-section gene-reference-sequences">
+          <section class="rprt-section-header" id="reference-sequences">
+           <h2 id="header-reference-sequences">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <p>
+            <span class="new-icon">
+             NEW
+            </span>
+            <strong>
+             Try the new
+            </strong>
+           </p>
+           <h3 class="genomerefseqs gene_std_toggler" id="refseqset-independent">
+           </h3>
+           <div class="genomerefseqs_slave">
+            <p class="desc">
+             These reference sequences exist independently of genome builds.
+            </p>
+            <p id="refseq-expl">
+             These reference sequences are curated independently of the genome
+                annotation cycle, so their versions may not match the RefSeq versions in the current
+                genome build. Identify version mismatches by comparing the version of the RefSeq in
+                this section to the one reported in
+             above.
+            </p>
+            <h4 id="genomic-p295280416">
+             Genomic
+            </h4>
+            <ol>
+             <li>
+              <p>
+               NG_012124.1 RefSeqGene
+              </p>
+              <dl>
+               <dt>
+                Range
+               </dt>
+               <dd class="rs-range">
+                <span>
+                 5001..16440
+                </span>
+               </dd>
+               <dt>
+                Download
+               </dt>
+               <dd>
+                ,
+                ,
+               </dd>
+              </dl>
+             </li>
+            </ol>
+            <h4 id="mrnaandproteins-p292850480">
+             mRNA and Protein(s)
+            </h4>
+            <ol>
+             <li>
+              <p>
+               →
+               E-selectin precursor
+              </p>
+              <p>
+              </p>
+              <p style="background:#fff; margin-top:1em;">
+               Status: REVIEWED
+              </p>
+              <dl>
+               <dt>
+                Source sequence(s)
+               </dt>
+               <dd class="wordwrap">
+               </dd>
+               <dt>
+                Consensus CDS
+               </dt>
+               <dd>
+               </dd>
+               <dt>
+                UniProtKB/Swiss-Prot
+               </dt>
+               <dd>
+                ,
+                ,
+               </dd>
+               <dt>
+                UniProtKB/TrEMBL
+               </dt>
+               <dd>
+               </dd>
+               <dt>
+                Related
+               </dt>
+               <dd>
+                ,
+               </dd>
+               <dt class="clear">
+                Conserved Domains (3)
+               </dt>
+               <dd>
+                <dl class="level2">
+                 <dt>
+                  <br/>
+                  <span class="cddlocation">
+                   Location:
+                  </span>
+                  <span class="cddfrom">
+                   22
+                  </span>
+                  →
+                  <span class="cddto">
+                   140
+                  </span>
+                 </dt>
+                 <dd class="clearfix">
+                  CLECT_selectins_like; C-type lectin-like domain (CTLD) of the type found in the type 1 transmembrane proteins:  P(platlet)-, E(endothelial)-, and L(leukocyte)- selectins (sels)
+                 </dd>
+                </dl>
+                <dl class="level2">
+                 <dt>
+                  <br/>
+                  <span class="cddlocation">
+                   Location:
+                  </span>
+                  <span class="cddfrom">
+                   148
+                  </span>
+                  →
+                  <span class="cddto">
+                   175
+                  </span>
+                 </dt>
+                 <dd class="clearfix">
+                  EGF_CA; Calcium-binding EGF-like domain, present in a large number of membrane-bound and extracellular (mostly animal) proteins. Many of these proteins require calcium for their biological function and calcium-binding sites have been found to be located at the ...
+                 </dd>
+                </dl>
+                <dl class="level2">
+                 <dt>
+                  <br/>
+                  <span class="cddlocation">
+                   Location:
+                  </span>
+                  <span class="cddfrom">
+                   333
+                  </span>
+                  →
+                  <span class="cddto">
+                   547
+                  </span>
+                 </dt>
+                 <dd class="clearfix">
+                  CCP; Complement control protein (CCP) modules (aka short consensus repeats SCRs or SUSHI repeats) have been identified in several proteins of the complement system
+                 </dd>
+                </dl>
+               </dd>
+              </dl>
+             </li>
+            </ol>
+           </div>
+           <h3 class="genomerefseqs gene_std_toggler" id="annotatedrefseq-title">
+           </h3>
+           <div class="genomerefseqs_slave">
+            <p class="desc">
+             The following sections contain reference sequences that belong to a
+                specific genome build.
+            </p>
+            <p id="expl-genomes-desc" style="display:none">
+             This section includes genomic Reference
+                Sequences (RefSeqs) from all assemblies on which this gene is annotated, such as
+                RefSeqs for chromosomes and scaffolds (contigs) from both reference and alternate
+                assemblies. Model RNAs and proteins are also reported here.
+            </p>
+            <h3 id="refseq-sequencedescription-p299282768">
+             Reference GRCh38.p14 Primary Assembly
+            </h3>
+            <h4 id="genomic-p299282768">
+             Genomic
+            </h4>
+            <ol>
+             <li>
+              <p>
+               NC_000001.11 Reference GRCh38.p14 Primary Assembly
+              </p>
+              <dl>
+               <dt>
+                Range
+               </dt>
+               <dd class="rs-range">
+                <span>
+                 169722640..169734079 complement
+                </span>
+               </dd>
+               <dt>
+                Download
+               </dt>
+               <dd>
+                ,
+                ,
+               </dd>
+              </dl>
+             </li>
+            </ol>
+            <h3 id="refseq-sequencedescription-p292840592">
+             Alternate T2T-CHM13v2.0
+            </h3>
+            <h4 id="genomic-p292840592">
+             Genomic
+            </h4>
+            <ol>
+             <li>
+              <p>
+               NC_060925.1 Alternate T2T-CHM13v2.0
+              </p>
+              <dl>
+               <dt>
+                Range
+               </dt>
+               <dd class="rs-range">
+                <span>
+                 169078428..169089853 complement
+                </span>
+               </dd>
+               <dt>
+                Download
+               </dt>
+               <dd>
+                ,
+                ,
+               </dd>
+              </dl>
+             </li>
+            </ol>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-related-sequences">
+          <section class="rprt-section-header" id="related-sequences">
+           <h2 id="header-related-sequences">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body">
+           <div>
+            <table class="jig-ncbiservergrid" data-jigconfig="webservice:'/gene/6401/data/related-sequences/',webserviceParams: 'p$l=Ajax', isServersideLoad:true, isServersidePaging: true,isServersidePagingCached: true,pageSize:25" id="proteinTblId">
+             <thead>
+              <tr>
+               <th colspan="2" id="rs-nucleo">
+                Nucleotide
+               </th>
+               <th id="rs-protein" rowspan="2">
+                Protein
+               </th>
+              </tr>
+              <tr>
+               <th id="rs-heading">
+                Heading
+               </th>
+               <th id="rs-heading-acc">
+                Accession and Version
+               </th>
+              </tr>
+             </thead>
+             <tbody>
+             </tbody>
+            </table>
+            <table class="jig-ncbigrid" data-jigconfig="isPageable:true, pageSize:25" id="proteinTblId">
+             <thead>
+              <tr>
+               <th class="proteinTblTh" id="rs-prot-acc" rowspan="2">
+                Protein Accession
+               </th>
+               <th class="proteinTblTh" colspan="2" id="rs-link">
+                Links
+               </th>
+              </tr>
+              <tr>
+               <th id="rs-genepept">
+                GenPept Link
+               </th>
+               <th id="rs-uniprot">
+                UniProtKB Link
+               </th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+               <td headers="rs-prot-acc">
+                P16581.1
+               </td>
+               <td headers="rs-link rs-genepept">
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+         <div class="rprt-section gene-additional-links">
+          <section class="rprt-section-header" id="additional-links">
+           <h2 id="header-additional-links">
+           </h2>
+           <div class="rprt-section-tools">
+           </div>
+          </section>
+          <div class="rprt-section-body" style="">
+           <div id="lsdb">
+            <h3 class="withnote" id="locusspecificdatabases">
+            </h3>
+            <div>
+             <ul class="locusdb">
+              <li>
+              </li>
+             </ul>
+            </div>
+           </div>
+           <h3 class="withnote" id="genelinkout">
+           </h3>
+           <div>
+            <p>
+             The following
+             resources are supplied by external providers. These providers are responsible for maintaining the links.
+            </p>
+            <div>
+             <div class="linkout">
+              <ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Interologous Interaction Database
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                MilliporeSigma
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+              </ul>
+             </div>
+             <div class="linkout">
+              <ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Bgee database
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                BioGPS
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                BioGRID Open Repository of CRISPR Screens (ORCS)
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Domain Mapping of Disease Mutations
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Eukaryotic Promoter Database
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                GlyGen glycoinformatics resource
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Guide to Pharmacology
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                <span class="regis-rsc">
+                </span>
+                Human Gene Mutation Database
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Human eFP Browser
+               </li>
+               <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+               </ul>
+               <li>
+                Ingenuity Pathways Analysis
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                InnateDB
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                InterMine
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Kyoto Encyclopedia of Genes and Genomes
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                OMA Browser: Orthologous MAtrix
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                OrthoDB catalog of orthologs
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                PANTHER Classification System
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Pharmacogenomics Knowledge Base
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                PhosphoSitePlus
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                The Gene Wiki
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                The Weizmann Institute of Science GeneCards and MalaCards databases
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+              </ul>
+             </div>
+             <div class="linkout">
+              <ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                Addgene Non-profit plasmid repository
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                Bio-Techne
+               </li>
+               <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                Creative Biogene
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                ExactAntigen/Labome
+               </li>
+               <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                GenScript latest version of gene cDNA ORF Clone
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                GeneCopoeia Inc.
+               </li>
+               <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                GeneTex Inc
+               </li>
+               <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+               </ul>
+               <li>
+                <span class="order-rsc">
+                </span>
+                OriGene
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+              </ul>
+             </div>
+             <div class="linkout">
+              <ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                GeneMANIA
+               </li>
+               <ul>
+                <li>
+                </li>
+               </ul>
+              </ul>
+             </div>
+             <div class="linkout">
+              <ul>
+               <li>
+                <span class="free-rsc">
+                </span>
+                Reactome
+               </li>
+               <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+               </ul>
+              </ul>
+             </div>
+            </div>
+           </div>
+           <div id="urls-in-genombrowser" style="display:none">
+           </div>
+          </div>
+         </div>
+         <div>
+          <input class="section_status_input" id="status_checked" name="status_checked" type="hidden" value=""/>
+          <input class="section_status_input" id="status_open" name="status_open" type="hidden" value="summary,region,context,bibliography,phenotypes,variation,hiv,interactions,pathways,geneInfo,proteinInfo,refSeq,related,links"/>
+          <input class="section_status_input" id="status_exist" name="status_exist" type="hidden" value="summary,context,region,expression,bibliography,phenotypes,variation,hiv,,interactions,geneInfo,proteinInfo,refSeq,related,links"/>
+          <input class="section_status_input" id="status_closed" name="status_closed" type="hidden" value=""/>
+          <meta class="meta_section_status" content="" name="status_checked"/>
+          <meta class="meta_section_status" content="summary,region,context,bibliography,phenotypes,variation,hiv,interactions,pathways,geneInfo,proteinInfo,refSeq,related,links" name="status_open"/>
+          <meta class="meta_section_status" content="summary,context,region,expression,bibliography,phenotypes,variation,hiv,,interactions,geneInfo,proteinInfo,refSeq,related,links" name="status_exist"/>
+          <meta class="meta_section_status" content="" name="status_closed"/>
+         </div>
+        </div>
+       </div>
+       <div id="messagearea_bottom">
+       </div>
+       <div class="bottom">
+       </div>
+      </div>
+     </div>
+     <div class="supplemental col three_col last" id="sidebar_tabular">
+      <!-- sidebar close/hide button-->
+      <div class="ui-helper-clearfix">
+      </div>
+      <!-- end sidebar close/hide button-->
+      <h2 class="offscreen_noflow">
+       Supplemental Content
+      </h2>
+      <div id="gene-sidebar">
+       <div>
+        <div class="portlet brieflink dis-table-of-contents">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Table of contents
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+            <div class="subsection-links">
+             ,
+             ,
+            </div>
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+           </li>
+           <li class="">
+            <div class="subsection-links">
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink dis-genomesbrowser brieflink dis-genomesbrowser">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Genome Browsers
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet dis-related-info brieflink">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Related information
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content DiscoveryDbLinks">
+          <ul>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Order cDNA clone
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             3D structure of a gene
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             BioAssays related to the gene by protein target or RNAi target
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Summarized PubChem Data on the gene, showing the active data by default
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             PubChem BioAssays done on the Gene target
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             BioAssays that contain the gene as the target of a RNAi reagent, which is identified as a hit in a RNAi screening and flagged as "active" in the corresponding BioAssay record
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             BioAssays that contain the gene as the target of a RNAi reagent
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             BioProjects related to a gene
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             BioSystems
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to CCDS
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related medical variations
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related CDD
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link from Gene to dbVar
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             PMC links
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Full text in PubMedCentral identified from shared sequence links
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Functional class of the sequence domain architecture
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             GAP Links
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Overlapping genes and two nearest non-overlapping genes on either side
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related Genome
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related GEO
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Tests for this gene in the NIH Genetic Testing Registry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related HomoloGene
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related Nucleotide entry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related OMIM entry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related Probe entry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related protein entry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             PubChem Compounds
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             PubChem Substances
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related PubMed entry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related PubMed article from GeneRIFs
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Gene links to PubMed derived from omim_pubmed_cited links
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Citations in PubMed identified from shared sequence and PMC links.
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to Protein RefSeqs
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to Nucleotide RefSeq RNAs
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to Nucleotide RefSeqGenes
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related SNP records
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             SNPs linked from GeneView
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related taxonomy entry
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <div class="brieflinkpop offscreen_noflow">
+             Related Variants
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet dis-links-to-other-res brieflink">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Links to other resources
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink dis-general-info">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            General information
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink dis-related-sites">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Related sites
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink dis-feedback">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Feedback
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li>
+           </li>
+           <li>
+           </li>
+           <li>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink dis-subscription">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Subscription
+           </h3>
+          </div>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <!--	<component id="Gene_RVFullReport.Gene_RightColMenuLinks"/>-->
+       <div class="portlet">
+        <div class="portlet_head">
+         <div class="portlet_title">
+          <h3>
+           Recent activity
+          </h3>
+         </div>
+        </div>
+        <div class="portlet_content">
+         <div class="" id="HTDisplay">
+          <input name="EntrezSystem2.PEntrez.Gene.Gene_ResultsPanel.HistoryDisplay.Cmd" sid="1" type="hidden"/>
+          <div class="action">
+          </div>
+          <ul id="activity">
+           <li class="ra_rcd ralinkpopper two_line">
+            <div class="ralinkpop offscreen_noflow">
+             SELE selectin E [Homo sapiens]
+             <div class="brieflinkpopdesc">
+              Gene ID:6401
+             </div>
+            </div>
+            <div class="tertiary">
+             Gene
+            </div>
+           </li>
+          </ul>
+          <p class="HTOn">
+           Your browsing activity is empty.
+          </p>
+          <p class="HTOff">
+           Activity recording is turned off.
+          </p>
+          <p class="HTOff" id="turnOn">
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="NCBIFooter_dynamic">
+      <!--<component id="NCBIBreadcrumbs"/>
+    <component id="NCBIHelpDesk"/>-->
+      <noscript>
+       <img alt="" src="/stat?jsdisabled=true&amp;ncbi_app=entrez&amp;ncbi_db=gene&amp;ncbi_pdid=full_report&amp;ncbi_phid=CE8BE87E6F784E410000000003F5035D"/>
+      </noscript>
+     </div>
+     <div class="footer" id="footer" xml:base="http://127.0.0.1/sites/static/header_footer/" xmlns="http://www.w3.org/1999/xhtml">
+      <section class="icon-section">
+       <div class="icon-section_header" id="icon-section-header">
+        Follow NCBI
+       </div>
+       <div class="grid-container container">
+        <div class="icon-section_container">
+        </div>
+       </div>
+      </section>
+      <section class="container-fluid bg-primary">
+       <div class="container pt-5">
+        <div class="row mt-3">
+         <div class="col-lg-3 col-12">
+          <p>
+          </p>
+          <ul class="list-inline social_media">
+           <li class="list-inline-item">
+           </li>
+           <li class="list-inline-item">
+           </li>
+           <li class="list-inline-item">
+           </li>
+          </ul>
+         </div>
+         <div class="col-lg-3 col-12">
+          <p class="address_footer text-white">
+           National Library of Medicine
+           <br/>
+          </p>
+         </div>
+         <div class="col-lg-3 col-12 centered-lg">
+          <p>
+           <br/>
+           <br/>
+          </p>
+         </div>
+         <div class="col-lg-3 col-12 centered-lg">
+          <p>
+           <br/>
+           <br/>
+          </p>
+         </div>
+        </div>
+        <div class="row">
+         <div class="col-lg-12 centered-lg">
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </div>
+    <div>
+     <input name="EntrezSystem2.PEntrez.DbConnector.Db" sid="1" type="hidden" value="gene"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LastDb" sid="1" type="hidden" value="gene"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.Term" sid="1" type="hidden" value=""/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LastTabCmd" sid="1" type="hidden" value=""/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LastQueryKey" sid="1" type="hidden" value="1"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.IdsFromResult" sid="1" type="hidden" value=""/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LastIdsFromResult" sid="1" type="hidden" value=""/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LinkName" sid="1" type="hidden"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LinkReadableName" sid="1" type="hidden"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.LinkSrcDb" sid="1" type="hidden"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.Cmd" sid="1" type="hidden"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.TabCmd" sid="1" type="hidden"/>
+     <input name="EntrezSystem2.PEntrez.DbConnector.QueryKey" sid="1" type="hidden"/>
+    </div>
+    <input id="p$a" name="p$a" type="hidden"/>
+    <input id="p$l" name="p$l" type="hidden" value="EntrezSystem2"/>
+    <input id="p$st" name="p$st" type="hidden" value="gene"/>
+    <input disabled="disabled" id="SessionId" name="SessionId" type="hidden" value="CE8BE87E6F7B98F1_1013SID"/>
+    <input disabled="disabled" id="Snapshot" name="Snapshot" type="hidden" value="/projects/Gene/Gene@4.18"/>
+   </form>
+  </div>
+ </div>
+ <!-- CE8BE87E6F7B98F1_1013SID /projects/Gene/Gene@4.18 portal104 v4.1.r674589 Tue, Oct 31 2023 02:02:38 -->
+ <span data-token="CE8BE87E6F7B98F1_1013SID" id="portal-csrf-token" style="display:none">
+ </span>
+</body>
