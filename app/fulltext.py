@@ -4,6 +4,9 @@ import requests
 from bs4 import BeautifulSoup
 from .model_responce import model_responce
 
+
+
+
 def fetch_article(url, query):
     # Set headers for the request
     headers = {
@@ -25,32 +28,31 @@ def fetch_article(url, query):
         # Extract article details
         body = soup.find('body')
         title = body.find('h1').get_text(strip=True) if body.find('h1') else 'No title found'
+        images =body.find_all("img")
         paragraphs = body.find_all('p')
         full_text = '\n'.join([p.get_text(strip=True) for p in paragraphs])
 
         # Get the summary using the model response
         summary = model_responce(full_text)
+        full_text = model_responce(f'give me this content in html formet like heading subheading peragrap best image and more . content is <{full_text}> , images <{images}> ')
+       
+        start = full_text.index('<html>')
+        end = full_text.index('</html>') + len('</html>')
+        full_text = full_text[start:end]
 
-        # Create the directory for storing HTML files if it doesn't exist
-        dir_path = f'html_data/{query}'
-        os.makedirs(dir_path, exist_ok=True)
-        
-        # Generate a random file name
-        name_f = f"{random.randint(1000, 9999)}"
-        file_path = os.path.join(dir_path, f"{name_f}.html")
-        
-        # Save the HTML content to a file
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(body.prettify())
+        # Parse with BeautifulSoup
+        soup = BeautifulSoup(full_text, 'html.parser')
 
-        # Prepare the article data for return
+        full_text = soup.prettify()
+
+
+
         article_data = {
             "query": query,
             "title": title,
             "content": full_text,
             "summary": summary,
-            "html": [body.prettify()],  # List of HTML content
-            "filename": f"{name_f}.html"  # File name of saved HTML
+            "html": [body.prettify()]
         }
         
         return article_data

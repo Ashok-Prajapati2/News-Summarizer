@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Search Results</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        {% if data.articles %}
+            <h2>Articles Found:</h2>
+            <ul>
+                {% for article in data.articles %}
+                    <li>
+                        <h3><a href="{{ url_for('full_article', article_id=article._id ,  query=data.query ) }}">{{ article.full_article.title }}</a></h3>
+                        <p><strong>Date:</strong> {{ article.date }}</p>
+                        <p>{{ article.full_article.summary|truncate(150) }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No articles found for your search query.</p>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ current_year }} Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // You can add any custom JavaScript here if needed
+    </script>
+</body>
+
+</html>

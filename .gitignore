@@ -14,3 +14,4 @@ venv/
 *.db
 
 delete_user.py
+delete_data.py

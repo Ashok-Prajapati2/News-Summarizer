@@ -7,5 +7,14 @@ flask
 flask-login 
 pymongo 
 flask-bcrypt  
-
+langchain
 flask-socketio
+
+
+streamlit
+langchain-groq
+langchain-community
+langchain
+langchain-core
+faiss-cpu
+langchain-community

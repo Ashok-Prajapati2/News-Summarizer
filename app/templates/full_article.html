@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ article.full_article.title }}</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>{{ article.full_article.title }}</h1>
+    </header>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot-section">
+        <h2>Ask the Chatbot</h2>
+        <form id="chatbot-form">
+            <input type="text" id="question" placeholder="Ask your question here..." required>
+            <button type="submit">Ask</button>
+        </form>
+        <div id="chatbot-response"></div> <!-- Updated ID for consistency -->
+    </section>
+
+    <main>
+        <p><strong>Date:</strong> {{ article.date }}</p>
+        <div id="article-content">{{ article.full_article.content | safe }}</div>
+
+        <!-- <div>{{ article.full_article.content }}</div> -->
+        <a href="{{ url_for('index') }}">Back to list</a>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector("#chatbot-form").addEventListener("submit", function (event) {
+                event.preventDefault();  // Prevent page reload
+    
+                const question = document.querySelector("#question").value; 
+    
+                fetch(`/full_article/{{ article._id }}`, { 
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ question: question })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const chatbotResponse = document.querySelector("#chatbot-response");
+                    if (data.answer) {
+                        chatbotResponse.textContent = data.answer; // Display the answer
+                    } else {
+                        chatbotResponse.textContent = "No answer available.";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    document.querySelector("#chatbot-response").textContent = "Error processing your request.";
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
