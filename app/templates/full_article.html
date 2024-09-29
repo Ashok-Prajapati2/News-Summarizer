@@ -5,40 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ article.full_article.title }}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>{{ article.full_article.title }}</h1>
     </header>
 
-    <!-- Chatbot Section -->
-    <section id="chatbot-section">
-        <h2>Ask the Chatbot</h2>
-        <form id="chatbot-form">
-            <input type="text" id="question" placeholder="Ask your question here..." required>
-            <button type="submit">Ask</button>
-        </form>
-        <div id="chatbot-response"></div> <!-- Updated ID for consistency -->
-    </section>
-
-    <main>
+    <main class="container mt-4">
         <p><strong>Date:</strong> {{ article.date }}</p>
-        <div id="article-content">{{ article.full_article.content | safe }}</div>
+        <div id="article-content" class="mb-4">{{ article.full_article.content | safe }}</div>
 
-        <!-- <div>{{ article.full_article.content }}</div> -->
-        <a href="{{ url_for('index') }}">Back to list</a>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to list</a>
+
+        <!-- Chatbot Section -->
+        <section id="chatbot-section" class="mt-5">
+            <h2>Ask the Chatbot</h2>
+            <form id="chatbot-form" class="form-inline">
+                <div class="form-group mb-2">
+                    <input type="text" id="question" class="form-control" placeholder="Ask your question here..." required>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Ask</button>
+            </form>
+            <div id="chatbot-response" class="mt-3"></div>
+        </section>
     </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; {{ current_year }} Your Website Name. All rights reserved.</p>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelector("#chatbot-form").addEventListener("submit", function (event) {
                 event.preventDefault();  // Prevent page reload
-    
-                const question = document.querySelector("#question").value; 
-    
-                fetch(`/full_article/{{ article._id }}`, { 
+
+                const question = document.querySelector("#question").value;
+
+                fetch(`/full_article/{{ article._id }}`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

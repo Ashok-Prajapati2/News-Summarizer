@@ -5,40 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>Search Results</h1>
         <nav>
-            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-light">Home</a>
         </nav>
     </header>
 
-    <main>
-        
-
+    <main class="container mt-4">
         {% if data.articles %}
-            <h2>Articles Found:</h2>
-            <ul>
-                {% for article in data.articles %}
-                    <li>
-                        <h3><a href="{{ url_for('full_article', article_id=article._id ,  query=data.query ) }}">{{ article.full_article.title }}</a></h3>
-                        <p><strong>Date:</strong> {{ article.date }}</p>
-                        <p>{{ article.full_article.summary|truncate(150) }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
+        <h2>Articles Found:</h2>
+        <ul class="list-group">
+            {% for article in data.articles %}
+            <li class="list-group-item mb-3">
+                <h3>
+                    <a href="{{ url_for('full_article', article_id=article._id , query=data.query) }}" class="text-dark">{{ article.full_article.title }}</a>
+                </h3>
+                <p><strong>Date:</strong> {{ article.date }}</p>
+                <p>{{ article.full_article.summary | truncate(150) }}</p>
+            </li>
+            {% endfor %}
+        </ul>
         {% else %}
-            <p>No articles found for your search query.</p>
+        <div class="alert alert-warning" role="alert">
+            No articles found for your search query.
+        </div>
         {% endif %}
     </main>
 
-    <footer>
+    <footer class="text-center py-4">
         <p>&copy; {{ current_year }} Your Website Name. All rights reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
         // You can add any custom JavaScript here if needed
