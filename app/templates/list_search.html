@@ -13,11 +13,11 @@
 
 <body>
     <header class="bg-primary text-white text-center py-4">
-        <h1>Search Results</h1>
         <nav>
             <a href="{{ url_for('index') }}" class="btn btn-outline-light">Home</a>
         </nav>
     </header>
+    <h1 class="text-center">Search Results</h1>
 
     <main class="container mt-4">
         {% if data.articles %}
@@ -26,8 +26,20 @@
             {% for article in data.articles %}
             <li class="list-group-item mb-3">
                 <h3>
-                    <a href="{{ url_for('full_article', article_id=article._id , query=data.query) }}" class="text-dark">{{ article.full_article.title }}</a>
+                    <a href="{{ url_for('full_article', article_id=article._id , query=data.query) }}"
+                        class="text-dark">
+                        {% if article.new_title != 'No title found' %}
+                        {{ article.new_title }}
+                        {% elif article.full_article.title != 'No title found' %}
+                        {{ article.full_article.title }}
+                        {% else %}
+                        {% set content_words = article.full_article.summary.split() %}
+                        {{ content_words[:5] | join(' ') }}...
+                        {% endif %}
+
+                    </a>
                 </h3>
+
                 <p><strong>Date:</strong> {{ article.date }}</p>
                 <p>{{ article.full_article.summary | truncate(150) }}</p>
             </li>

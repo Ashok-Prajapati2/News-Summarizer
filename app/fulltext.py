@@ -31,17 +31,16 @@ def fetch_article(url, query):
         images =body.find_all("img")
         paragraphs = body.find_all('p')
         full_text = '\n'.join([p.get_text(strip=True) for p in paragraphs])
-
+        
         # Get the summary using the model response
-        summary = model_responce(full_text)
-        full_text = model_responce(f'give me this content in html formet like heading subheading peragrap best image and more . content is <{full_text}> , images <{images}> ')
-       
-        start = full_text.index('<html>')
-        end = full_text.index('</html>') + len('</html>')
-        full_text = full_text[start:end]
+        summary = model_responce(f"Summary in 70 words of {title}:\n\n{full_text}")
+
+        full_text = model_responce(f'Convert this  content in html formet like heading subheading peragrap best image and more . content is <{full_text}> , images <{images}> ')
+        
 
         # Parse with BeautifulSoup
         soup = BeautifulSoup(full_text, 'html.parser')
+        full_text = full_text.find('html')
 
         full_text = soup.prettify()
 
@@ -52,7 +51,7 @@ def fetch_article(url, query):
             "title": title,
             "content": full_text,
             "summary": summary,
-            "html": [body.prettify()]
+            
         }
         
         return article_data

@@ -18,3 +18,4 @@ langchain
 langchain-core
 faiss-cpu
 langchain-community
+openai

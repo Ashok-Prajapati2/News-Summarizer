@@ -125,11 +125,14 @@ def full_article(article_id):
     user_category = user.get('category', 'No category defined').lower()
     logger.info(f"User {current_user.username}'s category: {user_category}")
     
-    if request.args.get('query') : 
+    if request.args.get('query'): 
+        
+        query = request.args.get('query').lower()
         logger.info(f"Using search query: {query}")
         data_collection = data_db[query]
     else:
         data_collection = data_db[user_category]
+
     article = data_collection.find_one({'_id': article_id})  
 
     if not article:

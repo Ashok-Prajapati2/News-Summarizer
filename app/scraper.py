@@ -29,6 +29,7 @@ async def fetch_results(query):
             response = await client.get(url)
             response.raise_for_status()
             data = response.json()
+            # print(data)
             return data
         except httpx.HTTPStatusError as e:
             print(f"HTTP error occurred: {e}")
@@ -60,8 +61,8 @@ async def process_query(query):
                 new_title = full_article.get('title', 'No title found')
                 new_article = full_article.get('content', 'No content found')
                 summary = full_article.get('summary', 'No summary available')
-                html = full_article.get('html', [])
-                filename = full_article.get('filename', 'No filename available')
+                # html = full_article.get('html', [])
+                # filename = full_article.get('filename', 'No filename available')
 
                 result_rows.append({
                     'query': query,
@@ -69,11 +70,8 @@ async def process_query(query):
                     'title': title,
                     'new_title': new_title,
                     'link': link,
-                    'snippet': snippet,
                     'summary': summary,
                     'full_article': full_article,
-                    'filename': filename,
-                    'html': html
                 })
         return result_rows
     return []

@@ -7,35 +7,92 @@
     <title>{{ article.full_article.title }}</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .nav-link {
+            color: #007bff;
+        }
+
+        .nav-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .chatbot-section {
+            margin-top: 2rem;
+            padding: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            background-color: #ffffff;
+        }
+
+        img {
+            max-width: 400px;
+            max-height: 200px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="bg-primary text-white text-center py-4">
-        <h1>{{ article.full_article.title }}</h1>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Data Science Articles</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Ashok-Prajapati2">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ashok-prajapati2.github.io/Portfolio/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main class="container mt-4">
+        <h1 class="mb-4 font-weight-bold">{{ article.full_article.title }}</h1>
         <p><strong>Date:</strong> {{ article.date }}</p>
         <div id="article-content" class="mb-4">{{ article.full_article.content | safe }}</div>
-
         <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to list</a>
 
-        <!-- Chatbot Section -->
-        <section id="chatbot-section" class="mt-5">
-            <h2>Ask the Chatbot</h2>
-            <form id="chatbot-form" class="form-inline">
-                <div class="form-group mb-2">
-                    <input type="text" id="question" class="form-control" placeholder="Ask your question here..." required>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Ask</button>
-            </form>
-            <div id="chatbot-response" class="mt-3"></div>
-        </section>
+        <div class="row mt-2">
+            <div class="col-md-5">
+                <section id="chatbot-section" class="chatbot-section">
+                    <h2>Ask the Chatbot</h2>
+                    <form id="chatbot-form" class="form-inline">
+                        <div class="form-group mb-2">
+                            <input type="text" id="question" class="form-control"
+                                placeholder="Ask your question here..." required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 ml-2">Ask</button>
+                    </form>
+                    <div id="chatbot-response" class="mt-3" style="color: rgb(1, 40, 88);"></div>
+                </section>
+            </div>
+            <div class="col-md-6 mt-4">
+                <h2 style="color: brown;">Summary</h2>
+                <div id="summary-content" class="mb-4">{{ article.full_article.summary | safe }}</div>
+            </div>
+        </div>
     </main>
 
-    <footer class="text-center py-4">
-        <p>&copy; {{ current_year }} Your Website Name. All rights reserved.</p>
+    <footer class="text-center py-4 mt-5">
+        <p>&copy; {{ current_year }} . All rights reserved.</p>
     </footer>
 
     <script>
@@ -44,36 +101,40 @@
                 event.preventDefault();  // Prevent page reload
 
                 const question = document.querySelector("#question").value;
+                const articleId = "{{ article._id }}"; // Get article ID from the template context
+                const queryParam = "{{ article.full_article.query }}"; // Get query from the template context
 
-                fetch(`/full_article/{{ article._id }}`, {
+                // Construct the URL based on whether the query is present
+                const url = queryParam ? `/full_article/${articleId}?query=${encodeURIComponent(queryParam)}` : `/full_article/${articleId}`;
+
+                fetch(url, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({ question: question })
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const chatbotResponse = document.querySelector("#chatbot-response");
-                    if (data.answer) {
-                        chatbotResponse.textContent = data.answer; // Display the answer
-                    } else {
-                        chatbotResponse.textContent = "No answer available.";
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    document.querySelector("#chatbot-response").textContent = "Error processing your request.";
-                });
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const chatbotResponse = document.querySelector("#chatbot-response");
+                        if (data.answer) {
+                            chatbotResponse.textContent = data.answer; // Display the answer
+                        } else {
+                            chatbotResponse.textContent = "No answer available.";
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        document.querySelector("#chatbot-response").textContent = "Error processing your request.";
+                    });
             });
         });
     </script>
-    
 </body>
 
 </html>

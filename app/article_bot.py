@@ -1,4 +1,5 @@
 import os
+import random
 import logging
 from groq import Groq
 from dotenv import load_dotenv
@@ -12,7 +13,19 @@ logger = logging.getLogger(__name__)
 
 
 load_dotenv()
-GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+API_KEYS = [
+    os.getenv('GROQ_API_KEY'),
+    os.getenv('GROQ_API_KEY1'),
+    os.getenv('GROQ_API_KEY2'),
+    os.getenv('GROQ_API_KEY2'),
+    os.getenv('GROQ_API_KEY3'),
+    os.getenv('GROQ_API_KEY4'),
+    os.getenv('GROQ_API_KEY5'),
+    
+    
+]
+GROQ_API_KEY = random.choice(API_KEYS)
+# GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
 client = Groq(api_key=GROQ_API_KEY)
 
@@ -26,7 +39,7 @@ def groq_response(query):
                     "content": str(query),  
                 }
             ],
-            model="llava-v1.5-7b-4096-preview",
+            model="llama-3.1-70b-versatile",
         )
         logger.info("Received response from Groq.")
         return chat_completion.choices[0].message.content
